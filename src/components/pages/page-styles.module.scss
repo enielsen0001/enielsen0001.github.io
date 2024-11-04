@@ -1,0 +1,29 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap-utilities.scss";
+
+.page-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+
+.about-img {
+    width: 100%;
+}
+
+.about-cta-wrap {
+    margin: 30px 0;
+
+    @include media-breakpoint-up(lg) {
+        margin: 50px 0;
+    }
+}
