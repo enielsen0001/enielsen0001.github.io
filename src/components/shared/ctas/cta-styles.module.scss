@@ -1,0 +1,10 @@
+@import '../../../global-styles/variables';
+
+.arrow-link {
+    color: $med-blue;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+    };
+}

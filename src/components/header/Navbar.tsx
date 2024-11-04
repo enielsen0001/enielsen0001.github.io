@@ -1,7 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
+    const path = window.location.pathname;
 
     //ENTODO fix aria-current and active class
     return (
@@ -12,13 +13,13 @@ const Navbar = () => {
                 <div className="justify-content-end" id="navbarNav">
                     <ul className={styles['nav-list']}>
                         <li>
-                            <Link to="/">About</Link>
+                            <NavLink to="/">About</NavLink>
                         </li>
                         <li>
-                            <Link to="/projects">Projects</Link>
+                            <NavLink to="/projects">Projects</NavLink>
                         </li>
                         <li>
-                            <Link to="/resume">Resume</Link>
+                            <NavLink to="/resume">Resume</NavLink>
                         </li>
                     </ul>
                 </div>

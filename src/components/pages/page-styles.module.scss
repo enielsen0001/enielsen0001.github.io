@@ -15,7 +15,7 @@
     }
 }
 
-
+// about page
 .about-img {
     width: 100%;
 }
@@ -25,5 +25,86 @@
 
     @include media-breakpoint-up(lg) {
         margin: 50px 0;
+    }
+}
+
+// Projects page
+.proj {
+    margin-bottom: 40px;
+}
+
+// resume page
+.rez {
+    &-header {
+        margin-top: 40px;
+
+        h1 {
+            font-size: 2.25rem;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+        }
+    }
+
+    &-section {
+        margin-bottom: 2rem;
+    }
+
+    &-job {
+        margin-bottom: 1.5rem;
+
+        ul {
+            margin-left: 0;
+            padding-left: 0;
+            list-style-position: inside;
+        }
+    }
+
+    &-edu {
+        h3 {
+            margin-bottom: 0;
+        }
+
+        p:not(:last-of-type) {
+            margin: 0;
+        }
+    }
+
+
+    &-skl {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            columns: 1;
+
+            @media screen and (min-width: 450px) {
+                columns: 2;
+            }
+
+            @include media-breakpoint-up(md) {
+                columns: 3;
+            }
+
+            @include media-breakpoint-up(lg) {
+                columns: 4;
+            }
+
+            @include media-breakpoint-up(xl) {
+                columns: 5;
+            }
+        }
+
+        li {
+            margin-bottom: .5rem;
+        }
+    }
+
+    &-awd {
+        h3 {
+            margin-bottom: 0;
+        }
     }
 }

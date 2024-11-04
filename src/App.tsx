@@ -1,4 +1,4 @@
-import './App.css';
+import './global-styles/index.scss';
 import Navbar from './components/header/Navbar';
 import AppRouter from './routes/AppRouter';
 
