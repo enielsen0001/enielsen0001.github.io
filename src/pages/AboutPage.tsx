@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './page-styles.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import ArrowLink from '../shared/ctas/ArrowLink';
+import ArrowLink from '../components/ArrowLink';
 
 const AboutPage = () => {
     return (

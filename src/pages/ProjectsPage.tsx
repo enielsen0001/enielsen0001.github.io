@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page-styles.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ArrowLink from '../shared/ctas/ArrowLink';
+import ArrowLink from '../components/ArrowLink';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import ResumePage from '../components/pages/ResumePage';
-import AboutPage from '../components/pages/AboutPage';
-import ProjectsPage from '../components/pages/ProjectsPage';
+import ResumePage from '../pages/ResumePage';
+import AboutPage from '../pages/AboutPage';
+import ProjectsPage from '../pages/ProjectsPage';
 
 const AppRouter = () => {
   return (
