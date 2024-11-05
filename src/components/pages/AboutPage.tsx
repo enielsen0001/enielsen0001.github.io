@@ -24,7 +24,7 @@ const AboutPage = () => {
                             View profile <span className="sr-only">on LinkedIn</span>  <FontAwesomeIcon icon={faLinkedin} />
                         </ArrowLink>
 
-                        <ArrowLink href="/projects">See my projects</ArrowLink>
+                        <ArrowLink isRouterLink={true} href="/projects">See my projects</ArrowLink>
                     </div>
                 </div>
                 <div className="col-8 col-md-6 col-lg-4 mb-4">

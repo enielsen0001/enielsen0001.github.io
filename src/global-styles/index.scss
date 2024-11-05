@@ -64,11 +64,19 @@ a:not([class]) {
 
 // resume page
 @media print {
+    @page {
+        margin: 5%;
+    }
+
     .container {
         padding-top: 20px !important;
 
         header {
             margin-top: 0 !important;
+        }
+
+        .skills-list {
+            columns: 3;
         }
 
         &.is-condensed {

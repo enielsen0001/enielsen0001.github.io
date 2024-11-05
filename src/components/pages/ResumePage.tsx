@@ -160,7 +160,7 @@ const ResumePage = () => {
 
                 <section className={`${styles['rez-section']} ${styles['rez-skl']} ${isCondensedPrint && 'no-print'}`}>
                     <h2>Skills</h2>
-                    <ul>
+                    <ul className="skills-list">
                         <li>CSS (10 years)</li><li>HTML5 (10 years)</li><li>JavaScript (10 years)</li>
                         <li>SCSS (10 years)</li>
                         <li>UI (10 years)</li>
