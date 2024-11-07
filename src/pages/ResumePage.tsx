@@ -42,7 +42,7 @@ const ResumePage = () => {
             </div>
 
             <main>
-                <header className={` d-md-flex justify-content-between align-items-center ${styles['rez-header']}`}>
+                <header id="rez-header" className={` d-md-flex justify-content-between align-items-center ${styles['rez-header']}`}>
                     <h1>Erika Nielsen</h1>
                     <div className="d-flex flex-column">
                         <a href="mailto:enielsen0002@gmail.com">enielsen0002@gmail.com</a>

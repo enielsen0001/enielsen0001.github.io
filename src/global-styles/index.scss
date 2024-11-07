@@ -212,4 +212,10 @@ a {
     .no-print {
         display: none;
     }
+
+    #rez-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
