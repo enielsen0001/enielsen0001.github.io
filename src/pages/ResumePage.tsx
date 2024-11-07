@@ -109,13 +109,6 @@ const ResumePage = () => {
                     </div>
 
                     <div className={`${styles['rez-job']} ${isCondensedPrint && 'no-print'}`}>
-                        <h3>Technical Support Representative, Charter Communications | Jul 2013 - Jan 2014</h3>
-                        <ul>
-                            <li>Demonstrated exceptional problem-solving skills and effective communication while providing phone-based customer support for internet and telephony issues</li>
-                        </ul>
-                    </div>
-
-                    <div className={`${styles['rez-job']} ${isCondensedPrint && 'no-print'}`}>
                         <h3>Multiple Roles, Whole Foods Market | Sept 2001 - Jul 2013</h3>
 
                         <ul>
