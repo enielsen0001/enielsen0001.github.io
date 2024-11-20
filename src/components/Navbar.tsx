@@ -3,7 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
     const path = window.location.pathname;
 
-    //ENTODO fix aria-current and active class
     return (
         <nav className={`bg-dark no-print`}  data-bs-theme="dark">
             <div className={`container nav-bar`}>
