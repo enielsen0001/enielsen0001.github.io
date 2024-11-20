@@ -16,6 +16,7 @@ html[data-bs-theme=light],
     --bs-link-color-rgb: 0, 102, 204;
     --bs-link-hover-color: #004D99;
     --bs-link-hover-color-rgb: 0, 77, 153;
+    --bs-body-bg: #f6f6f6;
 }
 
 html {
@@ -108,7 +109,6 @@ a {
 
     &-brand {
         text-decoration: none;
-        color: #fff;
         font-size: 1.5rem;
     }
 

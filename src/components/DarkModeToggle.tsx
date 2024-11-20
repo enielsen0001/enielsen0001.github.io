@@ -1,4 +1,4 @@
-import { faCircleHalfStroke } from "@fortawesome/free-solid-svg-icons";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 
@@ -46,7 +46,7 @@ const DarkModeToggle = () => {
             }}
         >
             <span className="sr-only">Enable {isCurrentDarkTheme ? 'light' : 'dark'} theme</span>
-            <FontAwesomeIcon icon={faCircleHalfStroke} />
+            <FontAwesomeIcon icon={isCurrentDarkTheme ? faSun : faMoon } />
         </button>
 
     );
