@@ -7,10 +7,11 @@ type TArrowLinkProps = {
     href: string,
     children: ReactNode,
     className?: string,
-    isRouterLink?: boolean
+    isRouterLink?: boolean,
+    newTab?: boolean
 }
 
-const ArrowLink = ({ href, children, className, isRouterLink = false }: TArrowLinkProps) => {
+const ArrowLink = ({ href, children, className, isRouterLink = false, newTab = false }: TArrowLinkProps) => {
     if(isRouterLink) {
         return (
             <Link to={href} className={`arrow-link icon-link ${className && className}`}>
@@ -20,7 +21,10 @@ const ArrowLink = ({ href, children, className, isRouterLink = false }: TArrowLi
         );
     } else {
         return (
-            <a href={href} className={`arrow-link icon-link ${className && className}`}>
+            <a href={href}
+            className={`arrow-link icon-link ${className && className}`}
+            {...(newTab && { target: '_blank' })}
+            >
                 { children }
                 <FontAwesomeIcon icon={faAngleRight} />
             </a>
