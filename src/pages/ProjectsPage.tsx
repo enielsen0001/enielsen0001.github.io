@@ -20,7 +20,7 @@ const ProjectsPage = () => {
 
                 <ArrowLink href="https://github.com/enielsen0001/enielsen0001.github.io" newTab={true}>See Portfolio site <span className="sr-only"> on GitHub opens in a new tab</span> <FontAwesomeIcon icon={faGithub} /></ArrowLink>
             </div>
-
+{/*
             <div className={styles.proj}>
                 <h2>Shopify custom site - <FontAwesomeIcon icon={faScrewdriverWrench} /> WIP</h2>
                 <p>Featured skills: Liquid, GraphQL, JavaScript, HTML, CSS, Git</p>
@@ -30,7 +30,7 @@ const ProjectsPage = () => {
 
                 <ArrowLink href="https://en002-test-store.myshopify.com/"  newTab={true}>See store <span className="sr-only"> opens in a new tab</span> <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></ArrowLink>
                 <p className="mt-1"><em>Please <a href="mailto:enielsen002@gmail.com">contact me</a> for store password</em></p>
-            </div>
+            </div> */}
 
             <div className={styles.proj}>
                 <h2>MERN Stack Notes App - <FontAwesomeIcon icon={faScrewdriverWrench} /> WIP</h2>
