@@ -1,0 +1,57 @@
+@import './_variables.scss';
+
+@mixin breakpoint($bp) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}
+
+@mixin breakpoint-max($bp) {
+    @media (max-width: calc($bp  - .5px)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-min-max($bp1, $bp2) {
+    @media (min-width: $bp1) and (max-width: calc($bp2  - .5px)) {
+        @content;
+    }
+}
+
+@mixin center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin center-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin center-xy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin clearfix() {
+    &::before, &::after {
+        content: "";
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+@mixin cascade($num-elements: 120, $delay: 200) {
+    @for $i from 1 to $num-elements + 1 {
+        &:nth-child(#{$i}) {
+            transition-delay:#{$i * $delay}ms;
+        }
+    }
+}

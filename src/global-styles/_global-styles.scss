@@ -1,0 +1,92 @@
+:root {
+    --headline-font: #{$main-font};
+    --body-font: #{$main-font};
+    --body-bg-color: #{$near-black};
+    --text-color: #ffffff;
+    --text-color-dk:#{$near-black};
+    --body-bg-color: #{$near-black};
+    --contrast-text-color: #{$lt-gray};
+    --accent-text-color: #{$blue};
+    --cta-bg-color: #{$pink};
+    --cta-bg-hover-color: #{lighten($pink, 10%)};
+    --cta-text-color: #{$near-black};
+    --link-color: #{$blue};
+    --link-hover-color: #{lighten($blue, 10%)};
+  }
+
+
+html {
+    font-family: var(--body-font);
+    font-size: 62.5%;
+    background-color: var(--accent-text-color);
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+a {
+    text-underline-offset: $underline-offset;
+}
+
+button {
+
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+
+}
+
+.list-reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+// ctas
+.arrow-link {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 100%;;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--bs-body-color);
+    color: var(--bs-body-bg);
+    outline-offset: 3px;
+}

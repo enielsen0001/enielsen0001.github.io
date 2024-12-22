@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './page-styles.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ArrowLink from '../components/ArrowLink';
 import { faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -7,13 +6,13 @@ import { faArrowUpRightFromSquare, faScrewdriverWrench } from '@fortawesome/free
 
 const ProjectsPage = () => {
     return (
-        <div className={`container ${styles['page-content']}`}>
+        <div className={`container `}>
 
             <h1 className="mb-4">Projects</h1>
 
             <p>Following an extended period of employment, I am currently seeking new professional challenges and am actively developing my portfolio.</p>
 
-            <div className={styles.proj}>
+            <div>
                 <h2>Portfolio website (this site)</h2>
                 <p>Featured skills: HTML, SCSS, JavsScript, React, TypeScript, Bootstrap, Git</p>
                 <p>This is a simple, clean and functional personal portfolio website built with React and hosted on GitHub Pages.</p>
@@ -21,7 +20,7 @@ const ProjectsPage = () => {
                 <ArrowLink href="https://github.com/enielsen0001/enielsen0001.github.io" newTab={true}>See Portfolio site <span className="sr-only"> on GitHub opens in a new tab</span> <FontAwesomeIcon icon={faGithub} /></ArrowLink>
             </div>
 {/*
-            <div className={styles.proj}>
+            <div>
                 <h2>Shopify custom site - <FontAwesomeIcon icon={faScrewdriverWrench} /> WIP</h2>
                 <p>Featured skills: Liquid, GraphQL, JavaScript, HTML, CSS, Git</p>
                 <p>A customized Shopify theme and discount app.</p>
@@ -32,7 +31,7 @@ const ProjectsPage = () => {
                 <p className="mt-1"><em>Please <a href="mailto:enielsen002@gmail.com">contact me</a> for store password</em></p>
             </div> */}
 
-            <div className={styles.proj}>
+            <div>
                 <h2>MERN Stack Notes App - <FontAwesomeIcon icon={faScrewdriverWrench} /> WIP</h2>
                 <p>Featured skills: MongoDb, Mongoose, Express, Node, JSON Web Tokens (JWT), React, Redux, TypeScript</p>
                 <p>The 'Hello world' of full stack JS development.</p>
@@ -41,7 +40,7 @@ const ProjectsPage = () => {
                 <ArrowLink href="https://github.com/enielsen0001/enielsen0001.github.io" newTab={true}>See notes app <span className="sr-only"> on GitHub opens in a new tab</span> <FontAwesomeIcon icon={faGithub} /></ArrowLink>
             </div>
 
-            <div className={styles.proj}>
+            <div>
                 <h2>D3.js Examples</h2>
                 <p>Featured skills: D3.js</p>
                 <p>This project demonstrates my proficiency in D3.js by transforming complex datasets into visually stunning and informative visualizations. From simple bar charts to intricate network graphs, these projects showcase my creative approach to data storytelling.</p></div>
