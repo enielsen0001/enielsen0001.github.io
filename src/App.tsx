@@ -14,11 +14,13 @@ function App() {
 
   return (
     <div className="App">
-      <DarkModeToggle />
       <div className={`page-wrapper ${isMenuOpen ? 'show-menu' : ''}`}>
+      <div className={`page-wrapper__inner ${isMenuOpen ? 'show-menu' : ''}`}>
         <Header />
         <AppRouter />
         <Footer />
+        </div>
+
       </div>
     </div>
   );

@@ -84,7 +84,7 @@
 @mixin cp-hero {
     height: 39vw;
 
-    @include breakpoint($lg) {
+    @include breakpoint($md) {
         height: 33vw;
     }
 }

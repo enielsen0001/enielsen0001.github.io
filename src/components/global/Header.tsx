@@ -1,9 +1,18 @@
 import NavLinks from "../NavLinks";
 import Logo from "./Logo";
 import { useAppContext } from "../../AppContext";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
     const { isMenuOpen, setIsMenuOpen } = useAppContext();
+    const location = useLocation();
+
+    useEffect(() => {
+        setIsMenuOpen(false);
+    }, [location]);
+
+
 
     return (
         <header className="nav nav-header">

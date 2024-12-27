@@ -22,7 +22,8 @@
         position: relative;
         z-index: 1;
         @include hl;
-        text-shadow: 0 0 10px var(--body-bg-color)
+        text-shadow: 0 0 10px var(--body-bg-color);
+        padding-top: 40px;;
     }
 }
 

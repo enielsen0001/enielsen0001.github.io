@@ -219,16 +219,28 @@ $menu-break: $sm;
 }
 
 .page-wrapper {
-    transform: translateX(0);
-    transition: $menu-transition;
-    width: 100%;
-    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--body-bg-color);
 
     &.show-menu {
-        @include breakpoint-max($menu-break) {
-            transform: translateX(-$menu-width);
+        background-color: var(--accent-text-color);
+    }
+
+    &__inner {
+        transform: translateX(0);
+        transition: $menu-transition;
+        width: 100%;
+        position: relative;
+        background-color: var(--body-bg-color);
+
+        &.show-menu {
+            @include breakpoint-max($menu-break) {
+                transform: translateX(-$menu-width);
+            }
         }
     }
+
 }
 
 .footer {

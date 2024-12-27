@@ -8,6 +8,10 @@
     @include cp-hero;
     position: relative;
 
+    @include breakpoint-max($sm) {
+        height: 62vw;
+    }
+
     &__img-frame {
         position: relative;
 
@@ -31,16 +35,14 @@
     }
 
     .row {
-        @include breakpoint-max($md) {
-            padding-top: 6vw;
-        }
+        padding-top: 40px;
     }
 
     &__content {
 
         h1 {
             font-weight: $bold;
-            font-size: Min(10vw, 5rem);
+            font-size: Min(10vw, 4.7rem);
             margin-bottom: .05em;
 
             @include breakpoint($md) {
