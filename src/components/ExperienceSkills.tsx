@@ -34,7 +34,7 @@ const ExperienceSkills = () => {
 
                 <div className="col-12 col-md-6 col-xl-6 exp-wrap">
                     <h3>Exerience</h3>
-                    <h4><span>Front-end Developer</span> <span>2/22 - 10/24</span></h4>
+                    <h4><span>Front-End Developer</span> <span>2/22 - 10/24</span></h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
 
                     <h4><span>UI Developer</span> <span>2/22 - 10/24</span></h4>
