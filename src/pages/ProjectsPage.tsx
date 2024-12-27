@@ -20,7 +20,7 @@ const ProjectsPage = () => {
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
 
-                    <p>Following an extended period of employment, I am currently seeking new professional challenges and am actively developing my portfolio.</p>
+                    {/* <p>Following an extended period of employment, I am currently seeking new professional challenges and am actively developing my portfolio.</p> */}
 
                 </PageIntro>
 
