@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 
 const ExperienceSkills = () => {
     return (
-        <section className="skills-exp">
-            <div className="container">
-
-
+        <section className="skills-exp container">
             <div className="row">
                 <div className="col-12 col-md-5 col-xl-4 skills-wrap">
                     <h2>Skills & <br/>Experience</h2>
@@ -24,7 +21,9 @@ const ExperienceSkills = () => {
 
                         <li className="skill-type skill-type--3">Figma</li>
 
-                        <li className="skill-type skill-type--4">Something else</li>
+                        <li className="skill-type skill-type--4">foo</li>
+
+                        <li className="skill-type skill-type--5">foo</li>
 
                     </ul>
                 </div>
@@ -52,7 +51,6 @@ const ExperienceSkills = () => {
                     </div>
 
                 </div>
-            </div>
             </div>
         </section>
     );

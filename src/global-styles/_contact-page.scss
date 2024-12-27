@@ -54,4 +54,14 @@
 .contact-content {
     padding-top: 80px;
     padding-bottom: 80px;
+    position: relative;
+
+    .loader {
+        @include center-x;
+    }
+
+    iframe {
+        position: relative;
+        z-index: 1;
+    }
 }

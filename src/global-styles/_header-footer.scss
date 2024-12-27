@@ -1,5 +1,6 @@
 $menu-width: 250px;
 $menu-transition: transform .5s ease-in-out;
+$menu-break: $sm;
 
 .nav {
     width: 100%;
@@ -37,7 +38,7 @@ $menu-transition: transform .5s ease-in-out;
         list-style-type: none;
         margin-bottom: 0;
 
-        @include breakpoint($md) {
+        @include breakpoint($menu-break) {
             display: flex;
         }
 
@@ -51,7 +52,7 @@ $menu-transition: transform .5s ease-in-out;
 
             &:hover,
             &:focus {
-                @include breakpoint($md) {
+                @include breakpoint($menu-break) {
                     color: var(--accent-text-color);
                 }
             }
@@ -73,7 +74,7 @@ $menu-transition: transform .5s ease-in-out;
 
     .nav-header-menu {
 
-        @include breakpoint-max($md) {
+        @include breakpoint-max($menu-break) {
             position: absolute;
             top: 0;
             right: -$menu-width;
@@ -96,7 +97,7 @@ $menu-transition: transform .5s ease-in-out;
         position: relative;
         overflow: hidden;
 
-        @include breakpoint($md) {
+        @include breakpoint($menu-break) {
             display: none;
         }
 
@@ -148,7 +149,7 @@ $menu-transition: transform .5s ease-in-out;
     }
 
     .nav-links-header {
-        @include breakpoint-max($md) {
+        @include breakpoint-max($menu-break) {
             transform: translateX(-$menu-width);
             transition: $menu-transition;
             position: relative;
@@ -161,7 +162,7 @@ $menu-transition: transform .5s ease-in-out;
 
         li {
 
-            @include breakpoint-max($md) {
+            @include breakpoint-max($menu-break) {
                 opacity: 0;
                 transform: translateY(-20px);
                 transition: opacity 0.3s ease-out, transform 0.3s ease-out;
@@ -171,7 +172,11 @@ $menu-transition: transform .5s ease-in-out;
                 margin-bottom: 10px;
             }
 
-            @include breakpoint($md) {
+            @include breakpoint($menu-break) {
+                margin-left: 20px;
+            }
+
+            @include breakpoint($lg) {
                 margin-left: 35px;
             }
 
@@ -184,13 +189,13 @@ $menu-transition: transform .5s ease-in-out;
         a {
             font-size: 2rem;
 
-            @include breakpoint-max($md) {
+            @include breakpoint-max($menu-break) {
                 transition: .2s;
                 padding: 10px 30px;
                 color: var(--text-color-dk);
             }
 
-            @include breakpoint($md) {
+            @include breakpoint($menu-break) {
 
                 font-size: 1.6rem;
                 font-weight: $med;
@@ -220,7 +225,9 @@ $menu-transition: transform .5s ease-in-out;
     position: relative;
 
     &.show-menu {
-        transform: translateX(-$menu-width);
+        @include breakpoint-max($menu-break) {
+            transform: translateX(-$menu-width);
+        }
     }
 }
 
@@ -292,5 +299,11 @@ $menu-transition: transform .5s ease-in-out;
                 margin-right: 0;
             }
         }
+    }
+}
+
+.container {
+    @include breakpoint-max($menu-break) {
+        width: auto;
     }
 }
