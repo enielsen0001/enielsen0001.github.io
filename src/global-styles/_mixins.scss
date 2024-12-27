@@ -67,9 +67,13 @@
 @mixin accent-hl {
     font-weight: $bold;
     margin-bottom: .5em;
-    font-size: Min(8vw, 3.4rem);
+    font-size: Min(8vw, 3rem);
     color: var(--accent-text-color);
     line-height: 1;
+
+    @include breakpoint($lg) {
+        font-size: 3.4rem;
+    }
 }
 
 @mixin hl {
