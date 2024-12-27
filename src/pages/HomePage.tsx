@@ -1,17 +1,14 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import ArrowLink from '../components/ArrowLink';
+import ExperienceSkills from '../components/ExperienceSkills';
+import ContactCalloutBar from '../components/global/ContactCalloutBar';
+import HomeHero from '../components/HomeHero';
 
 const HomePage = () => {
     return (
-        <div className="homepage page-content">
-<div className={`container`}>
-
-            </div>
-        </div>
-
-
+        <main className="homepage page">
+            <HomeHero />
+            <ExperienceSkills/>
+            <ContactCalloutBar/>
+        </main>
     );
 };
 

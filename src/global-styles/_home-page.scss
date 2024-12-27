@@ -1,3 +1,159 @@
-.page-content {
+
+.home-hero {
+    background: linear-gradient(to top, var(--body-bg-color) 0%, transparent 10%), url(../../public/img/home-banner.jpg);
+    background-position: center;
+    background-size: cover;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__hl {
+        font-weight: $bold;
+        font-size: Min(6vw, 7.3rem);
+
+        span {
+            display: block;
+        }
+    }
+
+    &__sub-hl {
+        font-size: clamp(1.4rem, 2vw, 2.4rem);
+        line-height: 1.2;
+        margin: .25em auto 0;
+
+        br {
+            @include breakpoint($sm) {
+                display: none;
+            }
+        }
+    }
+}
+
+.skills-exp {
+    padding: 80px 0;
+
+    h2, h4 {
+        font-weight: $bold;
+        line-height: 1;
+        margin-bottom: .5em;
+    }
+
+    h2 {
+        font-size: Min(13vw, 5.3rem);
+
+        @include breakpoint($md) {
+            font-size: Min(5vw, 5.3rem);
+        }
+    }
+
+    h3 {
+        @include accent-hl;
+    }
+
+    h4 {
+        font-size: Min(5vw, 2.6rem);
+    }
+
+    p {
+        line-height: 1.6;
+        margin-bottom: 3em;
+    }
+
+    &__intro {
+        font-size: 1.8rem;
+    }
+
+    &__divider {
+        position: relative;
+
+        span {
+            @include center-xy;
+            display: block;
+            width: .2rem;
+            height: 100%;
+            background-color: var(--body-bg-accent-color);
+        }
+    }
+}
+
+.skill-list {
+    margin-bottom: 2em;
+}
+
+.skill-type {
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    font-weight: $med;
+    font-size: 1.8rem;
+    line-height: 1;
+    padding: 8px 20px;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+
+    &--1 {
+        color: $green;
+        border-color: $green;
+    }
+
+    &--2{
+        color: $pink;
+        border-color: $pink;
+    }
+
+    &--3 {
+        color: $blue;
+        border-color: $blue;
+    }
+
+    &--4 {
+        color: $yellow;
+        border-color: $yellow;
+    }
+
+    &--5 {
+        color: $lt-gray;
+        border-color: $lt-gray;
+    }
+}
+
+.exp-wrap {
+    h4 {
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint-min-max($md, $lg) {
+            display: block;
+            margin-bottom: 0;
+
+            span {
+                display: block;
+                margin-bottom: .5em;
+            }
+        }
+
+    }
+}
+
+.rez-link {
+    display: block;
+    margin-left: auto;
+    font-weight: $bold;
+    text-transform: uppercase;
+    color: var(--accent-text-color);
+    text-decoration: none;
+    text-underline-offset: $underline-offset;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+
+    svg {
+        font-size: 1.8rem;
+        margin-left: .25em;
+    }
 }

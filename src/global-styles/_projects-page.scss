@@ -1,0 +1,49 @@
+.projects-page {
+    @include dotted-bg;
+}
+
+.projects-hero {
+    background-image: url(../../public/img/bg-ide.jpg);
+    background-size: cover;
+    background-position: left center;
+    text-align: center;
+    padding: 80px 0;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: var(--body-bg-color);
+        opacity: .2;
+    }
+
+    @include breakpoint($lg) {
+        padding: 100px 0;
+    }
+
+    h1 {
+        position: relative;
+        z-index: 1;
+        @include hl;
+        text-shadow: 0 0 10px var(--body-bg-color)
+    }
+}
+
+.projects-content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    h2 {
+        @include accent-hl;
+    }
+
+    p {
+        line-height: 1.6;
+        margin-bottom: 1em;
+    }
+}
+
+.project-info {
+    margin-bottom: 5rem;
+}

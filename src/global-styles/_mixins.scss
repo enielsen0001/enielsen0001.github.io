@@ -55,3 +55,28 @@
         }
     }
 }
+
+@mixin dotted-bg {
+    background-image: url(../../public/img/circle-dot-bg.svg), url(../../public/img/circle-dot-bg.svg), url(../../public/img/circle-dot-bg.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 80vw;
+  background-position:
+  top -51vw right -32vw, top 8vw left -36vw, bottom -29vw right -20vw;
+}
+
+@mixin accent-hl {
+    font-weight: $bold;
+    margin-bottom: .5em;
+    font-size: Min(8vw, 3.4rem);
+    color: var(--accent-text-color);
+    line-height: 1;
+}
+
+@mixin hl {
+    font-weight: $bold;
+    font-size: Min(10vw, 5rem);
+
+    @include breakpoint($md) {
+        font-size: Min(5vw, 7.3rem);
+    }
+}

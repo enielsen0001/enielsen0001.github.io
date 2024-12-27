@@ -1,13 +1,68 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import ArrowLink from '../components/ArrowLink';
+import ArrowLink from '../components/global/ArrowLink';
+import ContactCalloutBar from '../components/global/ContactCalloutBar';
+import ContactLinks from '../components/global/ContactLinks';
+import PageIntro from '../components/global/PageIntro';
 
 const AboutPage = () => {
     return (
-        <div className={`container`}>
+        <main>
+            <section className='page about-page'>
+                <div className="container about-hero">
+                    <div className="row align-items-center">
+                        <div className="col-3 offset-1 offset-md-2">
+                            <div className="about-hero__img-frame ">
+                                <img src="./img/about-profile.jpg" alt="Erika Nielsen headshot" />
+                            </div>
+                        </div>
 
-            <div className="row justify-content-center align-items-center flex-column-reverse flex-md-row">
+                        <div className="about-hero__content col-7 col-md-5 offset-1">
+                            <h1>About me</h1>
+                            <p>Erika Nielsen - Front-End Developer</p>
+                            <ContactLinks className="about-hero__contact" />
+                        </div>
+                    </div>
+                </div>
+
+                <PageIntro className="about-intro">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo.</p>
+
+                    <div className="d-flex justify-content-end">
+                        <ArrowLink href="/projects" isRouterLink={true} linkType='accent'>Projects</ArrowLink>
+                    </div>
+
+                </PageIntro>
+
+                <div className="about-content container">
+
+                    <div className="row justify-content-center">
+                        <div className="col-10 col-lg-8">
+                            <h2>My journey</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
+
+                            <h2>What motivates me</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
+
+                            <h2>What I am looking for</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
+
+                            <h2>Ouside of work</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <ContactCalloutBar />
+        </main>
+
+    );
+};
+
+export default AboutPage;
+
+
+{/* <div className="row justify-content-center align-items-center flex-column-reverse flex-md-row">
                 <div className="col-md-6 col-lg-8">
                     <h1>Hello.  I'm Erika.</h1>
 
@@ -30,9 +85,4 @@ const AboutPage = () => {
                     <img src="/img/profile.png" alt="Headshot of Erika Nielsen" />
                 </div>
             </div>
-        </div>
-
-    );
-};
-
-export default AboutPage;
+        </div> */}

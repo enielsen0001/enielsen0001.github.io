@@ -1,11 +1,9 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
-import NavLinks from "./NavLinks";
-import Logo from "./Logo";
+import { useLocation } from "react-router-dom";
+import NavLinks from "../NavLinks";
 import ContactLinks from "./ContactLinks";
+import Logo from "./Logo";
 
 const Footer = () => {
-    const location = useLocation();
-    const isHome = location.pathname === '/';
 
     return (
         <footer className={`footer`}>

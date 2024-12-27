@@ -1,8 +1,8 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import AboutPage from '../pages/AboutPage';
 import ProjectsPage from '../pages/ProjectsPage';
 import HomePage from '../pages/HomePage';
+import ContactPage from '../pages/ContactPage';
 
 const AppRouter = () => {
   return (
@@ -10,7 +10,7 @@ const AppRouter = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/about" element={<AboutPage />} />
-        {/* <Route path="/contact" element={<ContactPage />} /> */}
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
   );
 };

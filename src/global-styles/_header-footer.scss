@@ -1,11 +1,9 @@
 $menu-width: 250px;
 $menu-transition: transform .5s ease-in-out;
 
-
-
-
 .nav {
     width: 100%;
+    background: linear-gradient(to bottom, var(--body-bg-color) 0%, transparent 100%);
 
     &-footer {
         display: none;
@@ -17,7 +15,7 @@ $menu-transition: transform .5s ease-in-out;
         align-items: center;
         padding-top: 5px;
         padding-bottom: 5px;
-
+        position: relative;
     }
 
     &-brand {
@@ -29,31 +27,18 @@ $menu-transition: transform .5s ease-in-out;
             width: 45px;
         }
 
-
         img {
             width: 100%;
         }
     }
-
-
 
     &-list {
 
         list-style-type: none;
         margin-bottom: 0;
 
-
-
         @include breakpoint($md) {
             display: flex;
-        }
-
-
-
-        li {
-
-
-
         }
 
         a {
@@ -75,184 +60,167 @@ $menu-transition: transform .5s ease-in-out;
                 text-decoration: underline;
                 text-underline-offset: $underline-offset;
             }
-
-
         }
+    }
 
+    // header
 
-
-}
-
-// header
-
-.nav-header.is-homepage {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.nav-header-menu {
-
-    @include breakpoint-max($md) {
+    &.is-homepage {
         position: absolute;
         top: 0;
-        right: -$menu-width;
-        width: $menu-width;
-        min-height: 100vh;
-        height: 100%;
-        background-color: var(--accent-text-color);
-        background: linear-gradient(to right, rgba(0, 1, 17, 0.2) 0%, rgba(0, 1, 17, 0) 4%) var(--accent-text-color);
-        overflow-x: hidden;
-    }
-}
-
-.menu-toggle {
-    --length: 24;
-    --offset: -38;
-    width: 35px;
-    height: 35px;
-    border: 2px solid var(--text-color);
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-
-    @include breakpoint-max($sm) {
-        position: absolute;
-        right: 20px;
-        top: 14px;
+        left: 0;
     }
 
-    @include breakpoint($md) {
-        display: none;
+    .nav-header-menu {
+
+        @include breakpoint-max($md) {
+            position: absolute;
+            top: 0;
+            right: -$menu-width;
+            width: $menu-width;
+            min-height: 100vh;
+            height: 100%;
+            background-color: var(--accent-text-color);
+            background: linear-gradient(to right, rgba(0, 1, 17, 0.2) 0%, rgba(0, 1, 17, 0) 4%) var(--accent-text-color);
+            overflow-x: hidden;
+        }
     }
 
-
-    svg {
-        width: 200%;
-        @include center-xy;
-    }
-
-    path {
-        fill: none;
-        stroke: #ffffff;
-        stroke-width: 3;
-        stroke-linecap: round;
-        stroke-linejoin: round;
+    .menu-toggle {
         --length: 24;
         --offset: -38;
-        stroke-dasharray: var(--length) var(--total-length);
-        stroke-dashoffset: var(--offset);
-        transition: all .5s cubic-bezier(.645, .045, .355, 1);
-    }
+        width: 35px;
+        height: 35px;
+        border: 2px solid var(--text-color);
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
 
-
-    .line--1,
-    .line--3 {
-        --total-length: 103;
-        --offset: -42;
-    }
-
-    .line--2 {
-        --total-length: 99;
-    }
-
-    &.is-open svg {
-        path {
-            transform: translateX(31px);
+        @include breakpoint($md) {
+            display: none;
         }
+
+
+        svg {
+            width: 200%;
+            @include center-xy;
+        }
+
+        path {
+            fill: none;
+            stroke: #ffffff;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            --length: 24;
+            --offset: -38;
+            stroke-dasharray: var(--length) var(--total-length);
+            stroke-dashoffset: var(--offset);
+            transition: all .5s cubic-bezier(.645, .045, .355, 1);
+        }
+
 
         .line--1,
         .line--3 {
-            --offset: -8;
-            --length: 15;
+            --total-length: 103;
+            --offset: -42;
         }
 
         .line--2 {
-            --offset: -7;
+            --total-length: 99;
+        }
+
+        &.is-open svg {
+            path {
+                transform: translateX(31px);
+            }
+
+            .line--1,
+            .line--3 {
+                --offset: -8;
+                --length: 15;
+            }
+
+            .line--2 {
+                --offset: -7;
+            }
         }
     }
-}
 
-.nav-links-header  {
-    @include breakpoint-max($md) {
-        transform: translateX(-$menu-width);
-        transition: $menu-transition;
-        position: relative;
-        padding: 50px 0;
-    }
-
-    .show-menu & {
-        transform: translateX(0);
-
-    }
-
-    li {
-
-
-
+    .nav-links-header {
         @include breakpoint-max($md) {
-            opacity: 0;
-            transform: translateY(-20px);
-            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-            @include cascade(4, 300);
-            overflow: hidden;display: block;
-            margin-bottom: 10px;
-        }
-
-        @include breakpoint($md) {
-            margin-left: 35px;
+            transform: translateX(-$menu-width);
+            transition: $menu-transition;
+            position: relative;
+            padding: 50px 0;
         }
 
         .show-menu & {
-            opacity: 1;
-            transform: translateY(0);
+            transform: translateX(0);
         }
 
+        li {
+
+            @include breakpoint-max($md) {
+                opacity: 0;
+                transform: translateY(-20px);
+                transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+                @include cascade(4, 300);
+                overflow: hidden;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            @include breakpoint($md) {
+                margin-left: 35px;
+            }
+
+            .show-menu & {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        a {
+            font-size: 2rem;
+
+            @include breakpoint-max($md) {
+                transition: .2s;
+                padding: 10px 30px;
+                color: var(--text-color-dk);
+            }
+
+            @include breakpoint($md) {
+
+                font-size: 1.6rem;
+                font-weight: $med;
+            }
+        }
     }
-
-    a {
-        font-size: 2rem;
-
-
-
-        @include breakpoint-max($md) {
-            transition: .2s;
-            padding: 10px 30px;
-            color: var(--text-color-dk);
-        }
-
-        @include breakpoint($md) {
-            color: var(--text-color);
-            font-size: 1.4rem;
-            font-weight: $normal;
-        }
-
-
-
-
-    }
-
-}
 }
 
 // footer
 
 .nav-links-footer {
-    color: var(--text-color);
+
+    a {
+        font-size: 1.6rem;
+
+        @include breakpoint($md) {
+            font-size: 1.4rem;
+            font-weight: $normal;
+        }
+    }
 }
-
-
 
 .page-wrapper {
     transform: translateX(0);
     transition: $menu-transition;
     width: 100%;
-    min-height: 100vh;
     position: relative;
 
     &.show-menu {
         transform: translateX(-$menu-width);
-
     }
 }
 
@@ -282,7 +250,7 @@ $menu-transition: transform .5s ease-in-out;
         justify-content: center;
     }
 
-    @include breakpoint($sm) {
+    @include breakpoint($md) {
         justify-content: flex-end;
     }
 
@@ -294,25 +262,24 @@ $menu-transition: transform .5s ease-in-out;
         }
     }
 
+    a {
+        font-weight: normal;
+        font-size: 1.4rem;
 
-    a {font-weight: normal;
-        @include breakpoint($md) {
-            font-size: 1.6rem;
+        @include breakpoint($md) {}
 
-
+        &:hover,
+        &:focus {
+            color: var(--accent-text-color);
         }
-        &:hover, &:focus {
-        color: var(--accent-text-color);
-    }
 
-    &.active {
-        text-decoration: none;
-    }
+        &.active {
+            text-decoration: none;
+        }
     }
 }
 
 .footer-contact-links {
-    display: flex;
     justify-content: center;
 
     @include breakpoint($md) {
@@ -320,29 +287,10 @@ $menu-transition: transform .5s ease-in-out;
     }
 
     li {
-        margin: 0 10px;
-
-        @include breakpoint($md) {
-            margin: 0 0 0 25px;
+        &:last-child {
+            @include breakpoint($md) {
+                margin-right: 0;
+            }
         }
-    }
-
-    a {
-        color: var(--text-color);
-        border: 1px solid var(--text-color);
-        width: 35px;
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-
-
-
-        &:hover, &:focus {
-            color: var(--accent-text-color);
-            border-color: var(--accent-text-color);
-        }
-
     }
 }

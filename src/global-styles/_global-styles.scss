@@ -2,6 +2,7 @@
     --headline-font: #{$main-font};
     --body-font: #{$main-font};
     --body-bg-color: #{$near-black};
+    --body-bg-accent-color: #{$dk-gray};
     --text-color: #ffffff;
     --text-color-dk:#{$near-black};
     --body-bg-color: #{$near-black};
@@ -68,15 +69,6 @@ button {
   }
 
 // ctas
-.arrow-link {
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-        text-decoration: underline;
-    }
-}
-
 .dark-mode-toggle {
     position: fixed;
     bottom: 20px;
@@ -89,4 +81,131 @@ button {
     background-color: var(--bs-body-color);
     color: var(--bs-body-bg);
     outline-offset: 3px;
+}
+
+.contact-bar {
+    background-color: var(--body-bg-accent-color);
+    padding: 40px 0;
+
+    p {
+        font-size: 1.8rem;
+        margin-right: 1em;
+        line-height: 1.2;
+
+        br {
+            @include breakpoint($sm) {
+                display: none;
+            }
+        }
+    }
+}
+
+.primary-cta {
+    font-weight: $semi;
+    color: var(--cta-text-color);
+    background-color: var(--cta-bg-color);
+    padding: 10px 20px;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 2px;
+
+    &:hover, &:focus {
+        background-color: var(--cta-bg-hover-color);
+    }
+}
+
+.contact-links {
+    display: flex;
+
+    li {
+        margin: 0 10px;
+
+        @include breakpoint($md) {
+            margin: 0 25px 0 0 ;
+        }
+    }
+
+    a {
+        color: var(--text-color);
+        border: 1px solid var(--text-color);
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        &:hover,
+        &:focus {
+            color: var(--accent-text-color);
+            border-color: var(--accent-text-color);
+        }
+
+    }
+}
+
+.page-intro {
+    background-color: var(--contrast-text-color);
+    color: var(--body-bg-color);
+    text-align: center;
+    font-size: clamp(1.6rem, 2vw, 2rem);
+    line-height: 1.5;
+    padding: Min(6vw, 60px);
+
+    p {
+        margin-bottom: 1em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.arrow-link {
+    text-decoration: none;
+    text-underline-offset: $underline-offset;
+    font-weight: $bold;
+    text-transform: uppercase;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+
+    &--primary {
+        color: var(--link-color);
+
+        span {
+            background-color: var(--link-color);
+        }
+
+        svg {
+            color: var(--text-color-dk);
+        }
+    }
+
+    &--accent {
+        color: var(--text-color-dk);
+
+        span {
+            background-color: var(--text-color-dk);
+        }
+
+        svg {
+            color: var(--contrast-text-color);
+        }
+    }
+
+    .arrow-icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin-left: .5em;
+        position: relative;
+        border-radius: 50%;
+    }
+
+    svg {
+        @include center-xy;
+        width: .6em;
+    }
 }

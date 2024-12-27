@@ -1,8 +1,8 @@
 import './global-styles/index.scss';
-import Header from './components/Header';
-import DarkModeToggle from './components/DarkModeToggle';
+import Header from './components/global/Header';
+import DarkModeToggle from './components/global/DarkModeToggle';
 import AppRouter from './routes/AppRouter';
-import Footer from './components/Footer';
+import Footer from './components/global/Footer';
 import { useAppContext } from './AppContext';
 
 
