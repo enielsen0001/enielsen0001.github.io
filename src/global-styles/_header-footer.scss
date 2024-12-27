@@ -4,7 +4,15 @@ $menu-break: $sm;
 
 .nav {
     width: 100%;
-    background: linear-gradient(to bottom, var(--body-bg-color) 0%, transparent 100%);
+
+
+    &-header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(to bottom, var(--body-bg-color) 0%, transparent 100%);
+    }
 
     &-footer {
         display: none;
@@ -62,14 +70,6 @@ $menu-break: $sm;
                 text-underline-offset: $underline-offset;
             }
         }
-    }
-
-    // header
-
-    &.is-homepage {
-        position: absolute;
-        top: 0;
-        left: 0;
     }
 
     .nav-header-menu {

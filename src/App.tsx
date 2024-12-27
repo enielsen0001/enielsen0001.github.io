@@ -4,6 +4,8 @@ import DarkModeToggle from './components/global/DarkModeToggle';
 import AppRouter from './routes/AppRouter';
 import Footer from './components/global/Footer';
 import { useAppContext } from './AppContext';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 
 

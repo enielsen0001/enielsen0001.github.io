@@ -3,8 +3,10 @@
 }
 
 .about-hero {
-    padding-top: Min(6vw, 80px);
-    padding-bottom: Min(6vw, 80px);
+    // padding-top: Min(6vw, 80px);
+    // padding-bottom: Min(6vw, 80px);
+    @include cp-hero;
+    position: relative;
 
     &__img-frame {
         position: relative;
@@ -25,6 +27,12 @@
         img {
             display: block;
             width: 100%;
+        }
+    }
+
+    .row {
+        @include breakpoint-max($md) {
+            padding-top: 6vw;
         }
     }
 

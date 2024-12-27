@@ -9,11 +9,7 @@ const ContactPage = () => {
         <main>
             <div className="page contact-page">
                 <div className="contact-hero">
-                    <div className="container">
-                        <div className="row">
-                            <h1>Contact</h1>
-                        </div>
-                    </div>
+                    <h1 className="visually-hidden">Hello</h1>
                 </div>
 
                 <PageIntro className="contact-intro">

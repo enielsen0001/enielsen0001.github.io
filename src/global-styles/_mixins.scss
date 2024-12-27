@@ -80,3 +80,11 @@
         font-size: Min(5vw, 7.3rem);
     }
 }
+
+@mixin cp-hero {
+    height: 39vw;
+
+    @include breakpoint($lg) {
+        height: 33vw;
+    }
+}

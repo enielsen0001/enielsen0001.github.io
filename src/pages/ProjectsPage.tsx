@@ -8,12 +8,8 @@ const ProjectsPage = () => {
     return (
         <main>
             <div className="page projects-page">
-                <div className="projects-hero">
-                    <div className="container">
-                        <div className="row">
-                            <h1>Projects</h1>
-                        </div>
-                    </div>
+                <div className="projects-hero d-flex justify-content-center align-items-center">
+                    <h1>Projects</h1>
                 </div>
 
                 <PageIntro className="projects-intro">

@@ -7,20 +7,23 @@ const AboutPage = () => {
     return (
         <main>
             <section className='page about-page'>
-                <div className="container about-hero">
-                    <div className="row align-items-center">
-                        <div className="col-3 offset-1 offset-md-2">
-                            <div className="about-hero__img-frame ">
-                                <img src="./img/about-profile.jpg" alt="Erika Nielsen headshot" />
+                <div className="about-hero d-flex align-items-center">
+                    <div className="container">
+                        <div className="row align-items-center">
+                            <div className="col-3 offset-1 offset-md-2">
+                                <div className="about-hero__img-frame ">
+                                    <img src="./img/about-profile.jpg" alt="Erika Nielsen headshot" />
+                                </div>
+                            </div>
+
+                            <div className="about-hero__content col-7 col-md-5 offset-1">
+                                <h1>About me</h1>
+                                <p>Erika Nielsen - Front-End Developer</p>
+                                <ContactLinks className="about-hero__contact" />
                             </div>
                         </div>
-
-                        <div className="about-hero__content col-7 col-md-5 offset-1">
-                            <h1>About me</h1>
-                            <p>Erika Nielsen - Front-End Developer</p>
-                            <ContactLinks className="about-hero__contact" />
-                        </div>
                     </div>
+
                 </div>
 
                 <PageIntro className="about-intro">

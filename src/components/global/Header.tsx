@@ -1,21 +1,15 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
 import NavLinks from "../NavLinks";
 import Logo from "./Logo";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAppContext } from "../../AppContext";
 
 const Header = () => {
-    const location = useLocation();
-    const isHome = location.pathname === '/';
     const { isMenuOpen, setIsMenuOpen } = useAppContext();
 
     return (
-        <header className={`nav nav-header ${isHome ? 'is-homepage' : ''}`}>
+        <header className="nav nav-header">
 
             <div className={`container nav-bar`}>
                 <Logo className='nav-brand nav-brand-header' />
-
 
                 <nav>
                     <button
