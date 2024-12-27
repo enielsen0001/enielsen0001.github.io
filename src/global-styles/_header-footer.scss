@@ -96,7 +96,7 @@ $menu-break: $sm;
         border-radius: 50%;
         position: relative;
         overflow: hidden;
-        left: 20px;
+        right: 20px;
 
         @include breakpoint($menu-break) {
             display: none;
