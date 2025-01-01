@@ -38,7 +38,7 @@ const Header = () => {
 
                     <div
                         className={`nav-header-menu ${isMenuOpen ? 'show-menu' : ''}`}
-                        aira-hidden={!isMenuOpen}
+                        aria-hidden={!isMenuOpen}
                         id="header-menu"
 
                     >

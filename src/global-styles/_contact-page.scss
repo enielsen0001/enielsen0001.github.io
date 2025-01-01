@@ -43,3 +43,78 @@
         z-index: 1;
     }
 }
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+
+    h2 {
+        @include accent-hl;
+    }
+
+    &-input-group {
+        margin-bottom: 1.5rem;
+
+        &.input-error {
+            input, textarea {
+                border-color: $error;
+                background-color: lighten($error, 35%);
+            }
+        }
+    }
+
+    label {
+        display: block;
+        font-weight: $semi;
+        margin-bottom: .5em;
+
+        span {
+            color: var(--accent-text-color);
+        }
+    }
+
+    input, textarea {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+        border-color: var(--contrast-text-color);
+        background-color: var(--contrast-text-color);
+        color: var(--text-color-dk);
+        border-style: solid;
+        border-width: 1px;
+        box-sizing: border-box;
+        font-family: var(--body-font);
+        padding: .3rem .5rem;
+    }
+
+    input {
+        height: 4rem;
+    }
+
+    &-error {
+        font-weight: $med;
+        display: block;
+        line-height: 1;
+        margin: .5rem 0;
+        color: var(--error-text-color);
+        font-size: 1.4rem;
+    }
+
+    button {
+        margin-top: 2rem;
+    }
+
+    &-submission-msg {
+        color: $green;
+        font-weight: $med;
+        display: block;
+        line-height: 1;
+        margin: 1.5rem 0;
+        color: $green;
+
+
+        &.submission-error {
+            color: var(--error-text-color);
+        }
+    }
+}
