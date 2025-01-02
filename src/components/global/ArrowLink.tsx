@@ -15,7 +15,7 @@ type TArrowLinkProps = {
 const ArrowIcon = () => {
     return (
     <span className="arrow-icon" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 15 17">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 15 17" aria-hidden="true">
             <path fill="currentColor" d="m14.056 8.5-8.5 8.5-1.695-1.695L10.666 8.5 3.861 1.695 5.556 0l8.5 8.5ZM3.883 5.126.5 8.507l3.353 3.353 3.381-3.382-3.352-3.352Z"/>
         </svg>
     </span>

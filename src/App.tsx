@@ -4,13 +4,14 @@ import AppRouter from './routes/AppRouter';
 import Footer from './components/global/Footer';
 import { useAppContext } from './AppContext';
 import { useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 
 
 function App() {
   const { isMenuOpen } = useAppContext();
   const loc = useLocation();
+  const mainContentRef = useRef<HTMLDivElement>(null);
 
 
     useEffect(() => {
@@ -29,10 +30,18 @@ function App() {
 
   return (
     <div className="App">
+      <button className="skip-link primary-cta" onClick={() => {
+        if (mainContentRef.current) {
+          mainContentRef.current.scrollIntoView({ behavior: 'smooth' });
+          mainContentRef.current.focus();
+        }
+      }}>Skip to Content</button>
       <div className={`page-wrapper ${isMenuOpen ? 'show-menu' : ''}`}>
       <div className={`page-wrapper__inner ${isMenuOpen ? 'show-menu' : ''}`}>
         <Header />
-        <AppRouter />
+        <div id="main-content" tabIndex={-1} ref={mainContentRef}>
+          <AppRouter />
+        </div>
         <Footer />
         </div>
 

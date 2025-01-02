@@ -242,6 +242,18 @@ a:not([class]) {
     object-position: center;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    z-index: 9999;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .skip-link:focus {
+    transform: translateY(40px);
+  }
+
 /* HTML: <div class="loader"></div> */
 .loader {
     display: block;

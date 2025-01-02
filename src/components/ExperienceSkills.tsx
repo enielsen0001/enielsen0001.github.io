@@ -24,7 +24,7 @@ const ExperienceSkills = () => {
                 </div>
 
                 <div className="col-12 col-md-1 col-xl-2 skills-exp__divider">
-                    <span></span>
+                    <span aria-hidden="true"></span>
                 </div>
 
                 <div className="col-12 col-md-6 col-xl-6 exp-wrap">

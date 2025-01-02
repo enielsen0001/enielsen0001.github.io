@@ -12,7 +12,7 @@ const Footer = () => {
 
                 <nav className="">
                     <NavLinks className='nav-links-footer' />
-                    <span className="divider"></span>
+                    <span className="divider" aria-hidden="true"></span>
                     <ContactLinks className="footer-contact-links"/>
                 </nav>
             </div>
