@@ -53,7 +53,7 @@ const ProjectsPage = () => {
                                     <h2>Client Work Examples</h2>
                                     <p>For examples of client work completed during my employment, please feel free to contact me directly</p>
 
-                                    <ArrowLink href="/contact" isRouterLink={true}>Contact me</ArrowLink></div>
+                                    <ArrowLink href="/#/contact" isRouterLink={true}>Contact me</ArrowLink></div>
                             </div>
                         </div>
                     </div>

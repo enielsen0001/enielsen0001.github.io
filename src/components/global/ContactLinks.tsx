@@ -17,7 +17,7 @@ const ContactLinks = ({ className = '' }) => {
                     <FontAwesomeIcon icon={faGithubAlt} />
                 </Link>
             </li>    <li>
-                <Link className="contact-link" to="/contact">
+                <Link className="contact-link" to="/#/contact">
                     <span className="visually-hidden">email</span>
                     <FontAwesomeIcon icon={faEnvelope} />
                 </Link>
