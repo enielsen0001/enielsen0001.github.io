@@ -33,6 +33,12 @@
     }
 }
 
+.skills-intro-wrap {
+    @include breakpoint($md) {
+        margin-bottom: 40px;
+    }
+}
+
 .skills-exp {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -45,6 +51,11 @@
 
         @include breakpoint($md) {
             font-size: Min(5vw, 5.3rem);
+            margin-right: 50px;
+        }
+
+        @include breakpoint($xl) {
+            margin-right: 100px;
         }
     }
 
@@ -172,7 +183,8 @@
 
     &__bar {
         height: 2rem;
-        background-color: $pink;
+        background-color: $blue;
+        background: linear-gradient(to right, $blue 0%,$pink 100%);
     }
 
     &__text {
@@ -180,5 +192,7 @@
         font-size: 1.4rem;
         display: block;
         margin-top: .5rem;
+        letter-spacing: .06em;
+        line-height: 1.2;
     }
 }

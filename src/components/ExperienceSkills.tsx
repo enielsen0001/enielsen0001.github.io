@@ -7,72 +7,19 @@ import Skills from "./Skills";
 const ExperienceSkills = () => {
     return (
         <section id="skills-exp" className="skills-exp container">
+            <div className="d-md-flex skills-intro-wrap">
+            <h2>Skills & <br />Experience</h2>
+
+<div className="skills-exp__intro">
+    <p>I'm a front-end developer passionate about building interactive and engaging web experiences. I thrive on translating designs into functional, user-friendly interfaces and find great satisfaction in helping individuals and brands establish a strong online presence.</p>
+    <ArrowLink href="/about" isRouterLink={true}>Learn more about me</ArrowLink>
+</div>
+
+
+            </div>
             <div className="row">
                 <div className="col-12 col-md-5 col-xl-4 skills-wrap">
-                    <h2>Skills & <br />Experience</h2>
-
-                    <div className="skills-exp__intro">
-                        <p>I'm a front-end developer passionate about building interactive and engaging web experiences. I thrive on translating designs into functional, user-friendly interfaces and find great satisfaction in helping individuals and brands establish a strong online presence.</p>
-                        <ArrowLink href="/about" isRouterLink={true}>Learn more about me</ArrowLink>
-                    </div>
-
-                    {/* <div className="skills-wrap">
-
-                        <h3>Skills</h3>
-
-                        <h4>Proficient in:</h4>
-
-                        <ul className="skill-list">
-                            <li>HTML</li>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>React</li>
-                            <li>Redux</li>
-                            <li>jQuery</li>
-
-                            <li>CSS</li>
-                            <li>SCSS/Sass</li>
-                            <li>Bootstrap</li>
-
-                            <li>Unit Testing (Jest, Enzyme)</li>
-                            <li>Code Reviews</li>
-                            <li>Accessibility</li>
-
-                            <li>Custom CMS</li>
-                            <li>Shopify Theme Development</li>
-
-                            <li>API Integration</li>
-
-                            <li>Figma</li>
-                            <li>Photoshop</li>
-                            <li>Git</li>
-
-                            <li>Agile Development</li>
-
-                            <li>Responsive Design</li>
-                        </ul>
-
-                        <h4>Developing Skills in:</h4>
-
-                        <ul className="skill-list">
-                            <li>Next.js</li>
-                            <li>Contentful</li>
-                            <li>Shopify App Development</li>
-                            <li>WordPress Theme Development</li>
-                            <li>Salesforce Commerce Cloud</li>
-                            <li>C#</li>
-                        </ul>
-
-                        <h4>Currently Learning:</h4>
-
-                        <ul className="skill-list">
-                            <li>Node.js</li>
-
-                            <li>Data Visualization (D3.js)</li>
-                            <li>Web Design</li>
-                        </ul>
-                    </div> */}
-                    <h3>Skills</h3>
+                <h3>Skills</h3>
                     <Skills />
                 </div>
 
