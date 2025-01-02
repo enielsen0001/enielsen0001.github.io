@@ -12,7 +12,7 @@ const ExperienceSkills = () => {
 
                     <div className="skills-exp__intro">
                         <p>I'm a front-end developer passionate about building interactive and engaging web experiences. I thrive on translating designs into functional, user-friendly interfaces and find great satisfaction in helping individuals and brands establish a strong online presence.</p>
-                        <ArrowLink href="/about">Learn more about me</ArrowLink>
+                        <ArrowLink href="/about" isRouterLink={true}>Learn more about me</ArrowLink>
                     </div>
 
                     <div className="skills-wrap">

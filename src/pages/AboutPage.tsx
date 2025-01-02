@@ -34,8 +34,8 @@ const AboutPage = () => {
                             <div className="div1"> <h2>My journey</h2>
                                 <p>Ten years ago, seeking a new challenge, I embarked on a path into web development, starting with <a href="https://code-you.org/programs/code-louisville/">Code Louisville's</a>&nbsp;pioneering second cohort where I completed training in both front-end and back-end (C#) technologies. This foundation has allowed me to contribute to projects across diverse sectors, from healthcare and internet services to talent acquisition and e-commerce.  Due to a recent company restructuring, I'm now available to join a new and innovative team.
                                 </p>
-                                <ArrowLink href="/#/#skills-exp" isRouterLink={true}>Learn more about my experience</ArrowLink>
-                                <ArrowLink href="/#/projects" isRouterLink={true}>See my projects</ArrowLink>
+                                <ArrowLink href="/#skills-exp" isRouterLink={true}>Learn more about my experience</ArrowLink>
+                                <ArrowLink href="/projects" isRouterLink={true}>See my projects</ArrowLink>
                             </div>
                             <div className="div2"> <h2>What motivates me</h2>
                                 <p>I'm driven by a commitment to crafting high-quality digital experiences, a process I approach with a dedicated passion for problem-solving. This involves a focus on creating intuitive and user-centric experiences that are both delightful and empowering, developing high-performing and scalable solutions that clients can be proud to own, and writing clean, efficient, and easily maintainable code that promotes seamless collaboration within development teams.
