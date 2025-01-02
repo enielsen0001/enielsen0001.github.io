@@ -1,5 +1,6 @@
 import ArrowLink from '../components/global/ArrowLink';
 import ContactCalloutBar from '../components/global/ContactCalloutBar';
+import HeroBanner from '../components/global/HeroImage';
 import PageIntro from '../components/global/PageIntro';
 
 const ProjectsPage = () => {
@@ -7,6 +8,7 @@ const ProjectsPage = () => {
         <main>
             <div className="page projects-page">
                 <div className="projects-hero d-flex justify-content-center align-items-center">
+                    <HeroBanner fileTitle="ide-hero" />
                     <h1>Projects</h1>
                 </div>
 

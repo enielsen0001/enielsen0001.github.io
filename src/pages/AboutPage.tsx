@@ -1,6 +1,7 @@
 import ArrowLink from '../components/global/ArrowLink';
 import ContactCalloutBar from '../components/global/ContactCalloutBar';
 import ContactLinks from '../components/global/ContactLinks';
+import HeroBanner from '../components/global/HeroImage';
 import PageIntro from '../components/global/PageIntro';
 
 const AboutPage = () => {
@@ -8,6 +9,7 @@ const AboutPage = () => {
         <main>
             <section className='page about-page'>
                 <div className="about-hero d-flex align-items-center">
+                    <HeroBanner fileTitle="dots-hero" />
                     <div className="container">
                         <div className="row align-items-center">
 

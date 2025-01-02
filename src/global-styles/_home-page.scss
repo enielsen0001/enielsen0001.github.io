@@ -1,15 +1,14 @@
 .home-hero {
-    background: linear-gradient(to top, var(--body-bg-color) 0%, transparent 10%), url(../../public/img/home-banner.jpg);
-    background-position: center;
-    background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     &__content {
         text-align: center;
         text-shadow: 2px 2px 4px #000;
+        z-index: 1;
     }
 
     &__hl {

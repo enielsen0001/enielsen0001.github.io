@@ -3,9 +3,6 @@
 }
 
 .contact-hero {
-    background-image: url(../../public/img/bg-hello.jpg);
-    background-size: cover;
-    background-position: center;
     @include cp-hero;
 }
 
