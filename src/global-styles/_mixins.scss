@@ -93,3 +93,20 @@
         height: 33vw;
     }
 }
+
+@mixin generate-widths($start: 0, $end: 11, $increment: 1) {
+    @for $i from $start to $end {
+
+      .width-#{$i} {
+        width: 0;
+        transition: width .6s ease-out;
+
+        .in-view & {
+            width: #{$i * 10%};
+        }
+      }
+      $i: $i + $increment;
+    }
+  }
+
+  @include generate-widths();

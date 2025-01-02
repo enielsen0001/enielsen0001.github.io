@@ -2,6 +2,7 @@ import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import ArrowLink from "./global/ArrowLink";
+import Skills from "./Skills";
 
 const ExperienceSkills = () => {
     return (
@@ -15,7 +16,7 @@ const ExperienceSkills = () => {
                         <ArrowLink href="/about" isRouterLink={true}>Learn more about me</ArrowLink>
                     </div>
 
-                    <div className="skills-wrap">
+                    {/* <div className="skills-wrap">
 
                         <h3>Skills</h3>
 
@@ -70,7 +71,9 @@ const ExperienceSkills = () => {
                             <li>Data Visualization (D3.js)</li>
                             <li>Web Design</li>
                         </ul>
-                    </div>
+                    </div> */}
+                    <h3>Skills</h3>
+                    <Skills />
                 </div>
 
                 <div className="col-12 col-md-1 col-xl-2 skills-exp__divider">
