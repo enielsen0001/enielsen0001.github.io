@@ -318,5 +318,7 @@ $menu-break: $sm;
 .container {
     @include breakpoint-max($menu-break) {
         width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
