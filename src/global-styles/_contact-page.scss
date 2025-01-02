@@ -29,21 +29,15 @@
 .contact-content {
     padding-top: 80px;
     padding-bottom: 80px;
-    position: relative;
-
-    .loader {
-        @include center-x;
-    }
-
-    iframe {
-        position: relative;
-        z-index: 1;
-    }
 }
 
 .contact-form {
-    width: 100%;
+    width: 80%;
     max-width: 600px;
+
+    @include breakpoint($sm) {
+        width: 100%;
+    }
 
     h2 {
         @include accent-hl;
