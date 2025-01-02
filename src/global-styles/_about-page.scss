@@ -3,42 +3,35 @@
 }
 
 .about-hero {
-    // padding-top: Min(6vw, 80px);
-    // padding-bottom: Min(6vw, 80px);
     @include cp-hero;
     position: relative;
+    background-color: $bg-dark;
+    overflow: hidden;
 
-    @include breakpoint-max($sm) {
-        height: 62vw;
-    }
+    &::before {
+        content: "";
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(30deg);
+        width: 105vw;
+        height: 100vw;
+        background: rgba(17, 17, 17, 0.5) url(../../public/img/bg-dots.jpg);
+        background-size: cover;
+        background-position: center top 28%;
+        background-blend-mode: overlay;
 
-    &__img-frame {
-        position: relative;
-
-        &:before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 8%;
-            right: 8%;
-            background-color: var(--body-bg-accent-color);
-            opacity: .2;
-            z-index: -1;
-        }
-
-        img {
-            display: block;
-            width: 100%;
-        }
-    }
+      }
 
     .row {
         padding-top: 40px;
     }
 
     &__content {
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        text-shadow: 0 0 10px var(--body-bg-color);
 
         h1 {
             font-weight: $bold;
@@ -61,6 +54,7 @@
 
     &__contact {
         margin: Min(2vw, 20px) 0;
+        justify-content: center;
 
         li {
             &:first-child {
@@ -93,4 +87,35 @@
             margin-bottom: 0;
         }
     }
+
+    .arrow-link {
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.about-grid {
+
+    > div:not(:last-child) {
+        @include breakpoint-max($md) {
+            margin-bottom: 6rem;
+        }
+    }
+
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 0px;
+
+        @include breakpoint($md) {
+            display: grid;
+        }
+
+
+        .div1 { grid-area: 1 / 1 / 4 / 2; }
+        .div2 { grid-area: 3 / 2 / 6 / 3; }
+        .div3 { grid-area: 5 / 1 / 8 / 2; }
+        .div4 { grid-area: 7 / 2 / 10 / 3; }
 }

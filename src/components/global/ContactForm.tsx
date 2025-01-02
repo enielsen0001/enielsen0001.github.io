@@ -158,7 +158,7 @@ const ContactForm: React.FC = () => {
             <input type="hidden" name="from_name" value="Erika Nielsen" />
 
             <div role="group" aria-labelledby="contactInfo">
-                <h2 id="contactInfo">Contact Information</h2>
+                <h2 id="contactInfo">Contact Info</h2>
                 <div className={`contact-form-input-group ${formErrors.fullName ? 'input-error' : ''}`}>
                     <label htmlFor="fullName">Full Name<span>*</span>:</label>
                     <input type="text" id="fullName" name="user_name" aria-describedby="fullNameError" aria-invalid={!!formErrors.fullName} />

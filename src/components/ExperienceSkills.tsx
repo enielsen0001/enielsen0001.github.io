@@ -1,31 +1,76 @@
 import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import ArrowLink from "./global/ArrowLink";
 
 const ExperienceSkills = () => {
     return (
-        <section className="skills-exp container">
+        <section id="skills-exp" className="skills-exp container">
             <div className="row">
                 <div className="col-12 col-md-5 col-xl-4 skills-wrap">
-                    <h2>Skills & <br/>Experience</h2>
-                    <p className="skills-exp__intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
-                    <h3>Skills</h3>
-                    <ul className="skill-list">
-                        <li className="skill-type skill-type--1">HTML</li>
-                        <li className="skill-type skill-type--1">CSS</li>
-                        <li className="skill-type skill-type--1">JavaScript</li>
-                        <li className="skill-type skill-type--1">TypeScript</li>
+                    <h2>Skills & <br />Experience</h2>
 
-                        <li className="skill-type skill-type--2">React</li>
-                        <li className="skill-type skill-type--2">Redux</li>
+                    <div className="skills-exp__intro">
+                        <p>I'm a front-end developer passionate about building interactive and engaging web experiences. I thrive on translating designs into functional, user-friendly interfaces and find great satisfaction in helping individuals and brands establish a strong online presence.</p>
+                        <ArrowLink href="/about">Learn more about me</ArrowLink>
+                    </div>
 
-                        <li className="skill-type skill-type--3">Figma</li>
+                    <div className="skills-wrap">
 
-                        <li className="skill-type skill-type--4">foo</li>
+                        <h3>Skills</h3>
 
-                        <li className="skill-type skill-type--5">foo</li>
+                        <h4>Proficient in:</h4>
 
-                    </ul>
+                        <ul className="skill-list">
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React</li>
+                            <li>Redux</li>
+                            <li>jQuery</li>
+
+                            <li>CSS</li>
+                            <li>SCSS/Sass</li>
+                            <li>Bootstrap</li>
+
+                            <li>Unit Testing (Jest, Enzyme)</li>
+                            <li>Code Reviews</li>
+                            <li>Accessibility</li>
+
+                            <li>Custom CMS</li>
+                            <li>Shopify Theme Development</li>
+
+                            <li>API Integration</li>
+
+                            <li>Figma</li>
+                            <li>Photoshop</li>
+                            <li>Git</li>
+
+                            <li>Agile Development</li>
+
+                            <li>Responsive Design</li>
+                        </ul>
+
+                        <h4>Developing Skills in:</h4>
+
+                        <ul className="skill-list">
+                            <li>Next.js</li>
+                            <li>Contentful</li>
+                            <li>Shopify App Development</li>
+                            <li>WordPress Theme Development</li>
+                            <li>Salesforce Commerce Cloud</li>
+                            <li>C#</li>
+                        </ul>
+
+                        <h4>Currently Learning:</h4>
+
+                        <ul className="skill-list">
+                            <li>Node.js</li>
+
+                            <li>Data Visualization (D3.js)</li>
+                            <li>Web Design</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div className="col-12 col-md-1 col-xl-2 skills-exp__divider">
@@ -35,20 +80,19 @@ const ExperienceSkills = () => {
                 <div className="col-12 col-md-6 col-xl-6 exp-wrap">
                     <h3>Exerience</h3>
                     <h4><span>Front-End Developer</span> <span>2/22 - 10/24</span></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
+                    <p>At CQL, a digital e-commerce agency, I developed and maintained e-commerce solutions for a variety of clients. My work encompassed custom React applications, bespoke Shopify theme development, Salesforce Commerce Cloud implementations using the Storefront Reference Architecture (SFRA), and Demandware maintenance integrated with React frontends. This experience solidified my passion for React development and appreciation for the Shopify platform's capabilities. I'm driven by empowering clients with control over their brand and product experiences.</p>
 
                     <h4><span>UI Developer</span> <span>2/22 - 10/24</span></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
+                    <p>At Radancy (formerly TMP), I built a large portfolio of career websites and email templates using a custom CMS, ensuring alignment with client branding and delivering exceptional digital experiences for job seekers. This role provided invaluable experience in creating accessible digital experiences, deepening my commitment to inclusive design. I transformed dozens of creative designs into engaging and accessible online platforms, a process I thoroughly enjoyed.</p>
 
                     <h4><span>Technical Consultant</span> <span>2/22 - 10/24</span></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
+                    <p>As a Technical Consultant at Perficient, I contributed to the development of digital prototypes for rapid user testing and iteration. Working in a highly agile environment, I built microsites to model potential enhancements to the enterprise website. Additionally, I customized WordPress themes and implemented analytics solutions.</p>
 
                     <h4><span>Wordpress Developer</span> <span>2/22 - 10/24</span></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
+                    <p>At IgLou, I applied my developing front-end skills to installing and customizing WordPress themes. The team provided exceptional support to both customers and colleagues, fostering a learning environment that significantly broadened my understanding of the internet.
+                    </p>
 
-                    <div className="d-flex justify-content-end">
-                        <a className="rez-link" href="../assets/base_resume_2024_v2.pdf" target="_blank" rel="noopener noreferrer">View resume <span className="visually-hidden">PDF</span> <FontAwesomeIcon icon={faFilePdf} /></a>
-                    </div>
+                    <a className="rez-link" href="../assets/base-resume-2024.pdf" target="_blank" rel="noopener noreferrer">View resume <span className="visually-hidden">PDF</span> <FontAwesomeIcon icon={faFilePdf} /></a>
 
                 </div>
             </div>

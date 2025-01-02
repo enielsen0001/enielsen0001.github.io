@@ -1,4 +1,3 @@
-
 .home-hero {
     background: linear-gradient(to top, var(--body-bg-color) 0%, transparent 10%), url(../../public/img/home-banner.jpg);
     background-position: center;
@@ -39,14 +38,11 @@
     padding-top: 80px;
     padding-bottom: 80px;
 
-    h2, h4 {
+    h2 {
+        font-size: Min(13vw, 5.3rem);
         font-weight: $bold;
         line-height: 1;
         margin-bottom: .5em;
-    }
-
-    h2 {
-        font-size: Min(13vw, 5.3rem);
 
         @include breakpoint($md) {
             font-size: Min(5vw, 5.3rem);
@@ -57,17 +53,18 @@
         @include accent-hl;
     }
 
-    h4 {
-        font-size: Min(5vw, 2.6rem);
-    }
-
     p {
         line-height: 1.6;
-        margin-bottom: 3em;
     }
 
     &__intro {
         font-size: 1.8rem;
+        margin-bottom: 3em;
+
+        a {
+            font-size: 1.6rem;
+            margin-top: 1em;
+        }
     }
 
     &__divider {
@@ -83,41 +80,33 @@
     }
 }
 
-.skill-list {
-    margin-bottom: 2em;
+.skills-wrap {
+    h4 {
+        font-size: 2rem;
+        margin-bottom: 1em;
+        font-weight: $med;
+    }
+
+    h5 {
+        color: $blue;
+        margin-bottom: 1em;
+        font-weight: $med;
+    }
 }
 
-.skill-type {
-    border: 2px solid transparent;
-    border-radius: 2rem;
-    font-weight: $med;
-    font-size: 1.8rem;
-    line-height: 1;
-    padding: 8px 20px;
-    display: inline-block;
-    margin: 0 10px 10px 0;
+.skill-list {
+    margin-bottom: 2em;
 
-    &--1 {
-        color: $green;
-        border-color: $green;
-    }
 
-    &--2{
-        color: $pink;
-        border-color: $pink;
-    }
-
-    &--3 {
-        color: $blue;
-        border-color: $blue;
-    }
-
-    &--4 {
-        color: $yellow;
-        border-color: $yellow;
-    }
-
-    &--5 {
+    li {
+        border: 2px solid transparent;
+        border-radius: 2rem;
+        font-weight: $med;
+        font-size: 1.4rem;
+        line-height: 1;
+        padding: 8px 20px;
+        display: inline-block;
+        margin: 0 10px 10px 0;
         color: $lt-gray;
         border-color: $lt-gray;
     }
@@ -125,6 +114,10 @@
 
 .exp-wrap {
     h4 {
+        font-weight: $bold;
+        line-height: 1;
+        font-size: Min(5vw, 2.6rem);
+        margin-bottom: .5em;
         display: flex;
         justify-content: space-between;
 
@@ -139,6 +132,10 @@
         }
 
     }
+
+    p {
+        margin-bottom: 3em;
+    }
 }
 
 .rez-link {
@@ -150,7 +147,8 @@
     text-decoration: none;
     text-underline-offset: $underline-offset;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         text-decoration: underline;
     }
 

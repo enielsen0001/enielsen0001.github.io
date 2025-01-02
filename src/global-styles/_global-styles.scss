@@ -176,6 +176,8 @@ button {
     text-underline-offset: $underline-offset;
     font-weight: $bold;
     text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
 
     &:hover, &:focus {
         text-decoration: underline;
@@ -218,6 +220,17 @@ button {
         @include center-xy;
         width: .6em;
     }
+}
+
+a:not([class]) {
+    color: var(--accent-text-color);
+    text-decoration: none;
+    text-underline-offset: $underline-offset;
+
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+
 }
 
 /* HTML: <div class="loader"></div> */

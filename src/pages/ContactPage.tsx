@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import ContactLinks from '../components/global/ContactLinks';
 import PageIntro from '../components/global/PageIntro';
 import ContactForm from '../components/global/ContactForm';
 
@@ -13,7 +12,7 @@ const ContactPage = () => {
                 </div>
 
                 <PageIntro className="contact-intro">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed mauris a felis maximus accumsan vitae at nulla. Donec nulla urna, tincidunt feugiat elit ut, luctus sollicitudin justo. Praesent sagittis mi vel dui sollicitudin ultrices. Nunc consequat diam erat, et aliquam mi consequat et. </p>
+                    <p>I'd love to hear from you! Whether you have a project in mind, a question about my work, or just want to connect, please don't hesitate to reach out using the form below.</p>
                 </PageIntro>
 
 

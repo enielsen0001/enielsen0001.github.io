@@ -25,7 +25,7 @@ const ArrowIcon = () => {
 const ArrowLink = ({ href, children, className, isRouterLink = false, newTab = false, linkType = "primary" }: TArrowLinkProps) => {
     if(isRouterLink) {
         return (
-            <Link to={href} className={`arrow-link arrow-link--${linkType} ${className && className}`}>
+            <Link to={href} className={`arrow-link arrow-link--${linkType} ${className ? className : ''}`}>
                 { children }
                 <ArrowIcon/>
             </Link>
@@ -33,7 +33,7 @@ const ArrowLink = ({ href, children, className, isRouterLink = false, newTab = f
     } else {
         return (
             <a href={href}
-            className={`arrow-link arrow-link--${linkType} ${className && className}`}
+            className={`arrow-link arrow-link--${linkType} ${className ? className : ''}`}
             {...(newTab && { target: '_blank' })}
             >
                 { children }
