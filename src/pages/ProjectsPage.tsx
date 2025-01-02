@@ -38,7 +38,7 @@ const ProjectsPage = () => {
                                     <p>Technologies: MongoDB, Mongoose, Express.js, Node.js, JSON Web Tokens (JWT), React, Redux, TypeScript</p>
                                     <p>This full-stack application, built using the MERN stack, allows users to create, edit, and delete notes, providing a simple and efficient way to manage their thoughts and ideas.</p>
 
-                                    <ArrowLink href="https://github.com/enielsen0001/enielsen0001.github.io" newTab={true}>View on GitHub <span className="sr-only"> on GitHub opens in a new tab</span></ArrowLink>
+                                    <ArrowLink href="https://github.com/enielsen0001/mern_notes_app" newTab={true}>View on GitHub <span className="sr-only"> on GitHub opens in a new tab</span></ArrowLink>
                                 </div>
 
                                 <div className="project-info">
@@ -53,7 +53,7 @@ const ProjectsPage = () => {
                                     <h2>Client Work Examples</h2>
                                     <p>For examples of client work completed during my employment, please feel free to contact me directly</p>
 
-                                    <ArrowLink href="/#/contact" isRouterLink={true}>Contact me</ArrowLink></div>
+                                    <ArrowLink href="/contact" isRouterLink={true}>Contact me</ArrowLink></div>
                             </div>
                         </div>
                     </div>
