@@ -1,6 +1,5 @@
 import './global-styles/index.scss';
 import Header from './components/global/Header';
-import DarkModeToggle from './components/global/DarkModeToggle';
 import AppRouter from './routes/AppRouter';
 import Footer from './components/global/Footer';
 import { useAppContext } from './AppContext';
@@ -11,6 +10,22 @@ import { useEffect } from 'react';
 
 function App() {
   const { isMenuOpen } = useAppContext();
+  const loc = useLocation();
+
+
+    useEffect(() => {
+
+      if(!!loc.hash) {
+        const element = document.getElementById(loc.hash.substring(1));
+
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        window.scrollTo(0, 0);
+      }
+
+    }, [loc.pathname]);
 
   return (
     <div className="App">
