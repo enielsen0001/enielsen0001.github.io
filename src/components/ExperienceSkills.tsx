@@ -42,7 +42,7 @@ const ExperienceSkills = () => {
                     <p>At IgLou, I applied my developing front-end skills to installing and customizing WordPress themes. The team provided exceptional support to both customers and colleagues, fostering a learning environment that significantly broadened my understanding of the internet.
                     </p>
 
-                    <a className="rez-link" href="../assets/base-resume-2024_v2.pdf" target="_blank" rel="noopener noreferrer">View resume <span className="visually-hidden">PDF</span> <FontAwesomeIcon icon={faFilePdf} /></a>
+                    <a className="rez-link" href="../assets/base_resume_2024_v2.pdf" target="_blank" rel="noopener noreferrer">View resume <span className="visually-hidden">PDF</span> <FontAwesomeIcon icon={faFilePdf} /></a>
 
                 </div>
             </div>
