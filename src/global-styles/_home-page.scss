@@ -5,6 +5,12 @@
     align-items: center;
     position: relative;
 
+    .hero-img {
+        @include breakpoint-max($menu-break) {
+            object-position: calc(50% + 2vw) center;
+        }
+    }
+
     &__content {
         text-align: center;
         text-shadow: 2px 2px 4px #000;
