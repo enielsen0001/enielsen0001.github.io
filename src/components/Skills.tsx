@@ -68,9 +68,8 @@ const SkillBar = ({ skill }: { skill: TSkill }) => {
     return (
 
         <li className={`skill-bar`}>
-            <div className={`skill-bar__bar width-${level}`}></div>
             <span className="skill-bar__text">{name}</span>
-            <span className="sr-only"> proficiency ${percentVal} percent</span>
+            <span className="sr-only"> proficiency ${percentVal} percent</span><div className={`skill-bar__bar width-${level}`}></div>
         </li>
     );
 }
@@ -137,12 +136,12 @@ const skillsArr: TSkill[] = [
         level: 6
     },
     {
-        name: 'Code Reviews',
+        name: 'Accessibility Best Practices',
         category: categories.E,
         level: 8
     },
     {
-        name: 'Accessibility Best Practices',
+        name: 'Code Reviews',
         category: categories.E,
         level: 8
     },
@@ -150,6 +149,11 @@ const skillsArr: TSkill[] = [
         name: 'Custom CMS',
         category: categories.D,
         level: 10
+    },
+    {
+        name: 'Contentful',
+        category: categories.D,
+        level: 4
     },
     {
         name: 'Shopify Theme Development',
@@ -182,18 +186,8 @@ const skillsArr: TSkill[] = [
         level: 6
     },
     {
-        name: 'Responsive Design',
-        category: categories.C,
-        level: 10
-    },
-    {
         name: 'Next.js',
         category: categories.B,
-        level: 4
-    },
-    {
-        name: 'Contentful',
-        category: categories.D,
         level: 4
     },
     {
@@ -235,5 +229,10 @@ const skillsArr: TSkill[] = [
         name: 'Web Design',
         category: categories.C,
         level: 6
-    }
+    },
+    {
+        name: 'Responsive Design',
+        category: categories.C,
+        level: 10
+    },
 ]
