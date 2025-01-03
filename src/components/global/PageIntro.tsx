@@ -10,7 +10,7 @@ const PageIntro = ({ className, children }: TPageIntroProps) => {
         <div className={`page-intro ${className}`}>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-10">
+                    <div className="col-md-10">
                         { children}
                     </div>
                 </div>

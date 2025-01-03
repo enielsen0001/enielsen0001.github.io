@@ -32,13 +32,13 @@ const ExperienceSkills = () => {
                     <h4><span>Front-End Developer</span> <span>2/22 - 10/24</span></h4>
                     <p>At CQL, a digital e-commerce agency, I developed and maintained e-commerce solutions for a variety of clients. My work encompassed custom React applications, bespoke Shopify theme development, Salesforce Commerce Cloud implementations using the Storefront Reference Architecture (SFRA), and Demandware maintenance integrated with React frontends. This experience solidified my passion for React development and appreciation for the Shopify platform's capabilities. I'm driven by empowering clients with control over their brand and product experiences.</p>
 
-                    <h4><span>UI Developer</span> <span>2/22 - 10/24</span></h4>
+                    <h4><span>UI Developer</span> <span>6/16 - 2/22</span></h4>
                     <p>At Radancy (formerly TMP), I built a large portfolio of career websites and email templates using a custom CMS, ensuring alignment with client branding and delivering exceptional digital experiences for job seekers. This role provided invaluable experience in creating accessible digital experiences, deepening my commitment to inclusive design. I transformed dozens of creative designs into engaging and accessible online platforms, a process I thoroughly enjoyed.</p>
 
-                    <h4><span>Technical Consultant</span> <span>2/22 - 10/24</span></h4>
+                    <h4><span>Technical Consultant</span> <span>7/15 - 6/16</span></h4>
                     <p>As a Technical Consultant at Perficient, I contributed to the development of digital prototypes for rapid user testing and iteration. Working in a highly agile environment, I built microsites to model potential enhancements to the enterprise website. Additionally, I customized WordPress themes and implemented analytics solutions.</p>
 
-                    <h4><span>Wordpress Developer</span> <span>2/22 - 10/24</span></h4>
+                    <h4><span>Wordpress Developer</span> <span>2/15 - 7/15</span></h4>
                     <p>At IgLou, I applied my developing front-end skills to installing and customizing WordPress themes. The team provided exceptional support to both customers and colleagues, fostering a learning environment that significantly broadened my understanding of the internet.
                     </p>
 
