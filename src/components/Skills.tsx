@@ -211,6 +211,11 @@ const skillsArr: TSkill[] = [
         level: 2
     },
     {
+        name: 'Webflow',
+        category: categories.D,
+        level: 4
+    },
+    {
         name: 'C#',
         category: categories.A,
         level: 3
