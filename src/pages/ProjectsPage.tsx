@@ -14,7 +14,7 @@ const ProjectsPage = () => {
 
                 <PageIntro className="projects-intro">
 
-                    <p>I'm always learning and experimenting with new web development techniques, and I'm excited to share some of my recent projects here. While my professional work has been my main focus, I'm actively building my personal portfolio to explore new ideas and showcase my skills. Here's a glimpse of what I'm currently working on:</p>
+                    <p>While my primary focus has been contributing to professional projects within established teams, I'm now dedicating time to building a more robust personal portfolio to showcase my expanding skillset and explore new creative directions.</p>
 
                 </PageIntro>
 
