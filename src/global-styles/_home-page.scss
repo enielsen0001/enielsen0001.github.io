@@ -5,6 +5,11 @@
     align-items: center;
     position: relative;
 
+    @include breakpoint($sm) {
+        height: 56.25vw;
+        max-height: 800px;
+    }
+
     .hero-img {
         @include breakpoint-max($menu-break) {
             object-position: calc(50% + 2vw) center;
@@ -19,7 +24,7 @@
 
     &__hl {
         font-weight: $bold;
-        font-size: Min(6vw, 7.3rem);
+        font-size: clamp(4.7rem, 6.7vw, 8.1rem);
 
         span {
             display: block;
