@@ -32,7 +32,7 @@ const AboutPage = () => {
                     <div className="row justify-content-center">
                         <div className="about-grid col-lg-10">
                             <div className="div1"> <h2>My journey</h2>
-                                <p>My journey into web development started about ten years ago when I joined <a href="https://code-you.org/programs/code-louisville/">Code Louisville's</a>&nbsp;second cohort. It was an amazing experience where I learned the ropes of both front-end and back-end development (C#). That foundation has allowed me to grow and contribute to projects in a variety of industries, including healthcare, internet services, talent acquisition, and e-commerce. Now, after a recent company restructuring, I'm excited to find a new team where I can continue to learn and contribute.
+                                <p>My journey into web development started about ten years ago when I joined <a href="https://code-you.org/programs/code-louisville/">Code Louisville</a>. It was an amazing experience where I learned the ropes of both front-end and back-end development (C#). That foundation has allowed me to grow and contribute to projects in a variety of industries, including healthcare, internet services, talent acquisition, and e-commerce. Now, after a recent company restructuring, I'm excited to find a new team where I can continue to learn and contribute.
                                 </p>
                                 <ArrowLink href="/#skills-exp" isRouterLink={true}>Learn more about my experience</ArrowLink>
                                 <ArrowLink href="/projects" isRouterLink={true}>See my projects</ArrowLink>
