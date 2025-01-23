@@ -34,7 +34,6 @@ const ProjectsPage = () => {
 
                                 <div className="project-info">
                                     <h2>D3.js Data Visualizations</h2>
-                                    <p>Technologies: D3.js</p>
                                     <p>These examples demonstrate my ability to transform complex datasets into visually compelling and informative visualizations, ranging from basic charts to intricate network graphs.</p>
 
                                     <ArrowLink href="https://codepen.io/collection/LYGOBd" newTab={true}>View on CodePen <span className="sr-only">opens in a new tab</span></ArrowLink>
