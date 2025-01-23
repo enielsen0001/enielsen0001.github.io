@@ -14,7 +14,7 @@ const ContactPage = () => {
                 </div>
 
                 <PageIntro className="contact-intro">
-                    <p>I'd love to hear from you! Whether you have a project in mind, a question about my work, or just want to connect, please don't hesitate to reach out using the form below.</p>
+                    <p>Let's connect! I'd love to hear about your project ideas, answer any questions you have about my work, or just chat. Feel free to use the form below to get in touch.</p>
                 </PageIntro>
 
 

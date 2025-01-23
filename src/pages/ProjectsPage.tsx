@@ -14,7 +14,7 @@ const ProjectsPage = () => {
 
                 <PageIntro className="projects-intro">
 
-                    <p>While my professional experience has been my primary focus, I'm actively building my personal portfolio to showcase my skills and passion for web development. Here are a few projects I'm currently developing:</p>
+                    <p>I'm always learning and experimenting with new web development techniques, and I'm excited to share some of my recent projects here. While my professional work has been my main focus, I'm actively building my personal portfolio to explore new ideas and showcase my skills. Here's a glimpse of what I'm currently working on:</p>
 
                 </PageIntro>
 
@@ -27,18 +27,9 @@ const ProjectsPage = () => {
 
                                 <div className="project-info">
                                     <h2>Portfolio Website (This Site)</h2>
-                                    <p>Technologies: HTML, SCSS, JavaScript, React, TypeScript, Bootstrap Grid, Git</p>
-                                    <p>This clean and functional portfolio website, built with React and hosted on GitHub Pages, highlights my skills and experience.</p>
+                                    <p>I built this portfolio website from the ground up using HTML, SCSS, JavaScript, React, TypeScript, and the Bootstrap Grid. It's hosted on GitHub Pages and represents my approach to clean, functional, and user-friendly design.</p>
 
                                     <ArrowLink href="https://github.com/enielsen0001/enielsen0001.github.io" newTab={true}>View on GitHub <span className="sr-only"> opens in a new tab</span> </ArrowLink>
-                                </div>
-
-                                <div className="project-info">
-                                    <h2>MERN Stack Notes App (Work in Progress)</h2>
-                                    <p>Technologies: MongoDB, Mongoose, Express.js, Node.js, JSON Web Tokens (JWT), React, Redux, TypeScript</p>
-                                    <p>This full-stack application, built using the MERN stack, allows users to create, edit, and delete notes, providing a simple and efficient way to manage their thoughts and ideas.</p>
-
-                                    <ArrowLink href="https://github.com/enielsen0001/mern_notes_app" newTab={true}>View on GitHub <span className="sr-only"> on GitHub opens in a new tab</span></ArrowLink>
                                 </div>
 
                                 <div className="project-info">
@@ -51,7 +42,7 @@ const ProjectsPage = () => {
 
                                 <div className="project-info">
                                     <h2>Client Work Examples</h2>
-                                    <p>For examples of client work completed during my employment, please feel free to contact me directly</p>
+                                    <p>I'm happy to share examples of my client work! Just reach out, and I'd be glad to chat.</p>
 
                                     <ArrowLink href="/contact" isRouterLink={true}>Contact me</ArrowLink></div>
                             </div>

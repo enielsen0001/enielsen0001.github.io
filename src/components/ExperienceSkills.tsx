@@ -11,7 +11,7 @@ const ExperienceSkills = () => {
             <h2>Skills & <br />Experience</h2>
 
 <div className="skills-exp__intro">
-    <p>I'm a front-end developer passionate about building interactive and engaging web experiences. I thrive on translating designs into functional, user-friendly interfaces and find great satisfaction in helping individuals and brands establish a strong online presence.</p>
+    <p>I'm a front-end developer passionate about creating awesome web experiences. I enjoy bringing designs to life and building user-friendly interfaces that help individuals and brands make a strong impact online.</p>
     <ArrowLink href="/about" isRouterLink={true}>Learn more about me</ArrowLink>
 </div>
 
@@ -30,19 +30,19 @@ const ExperienceSkills = () => {
                 <div className="col-12 col-md-6 col-xl-6 exp-wrap">
                     <h3>Exerience</h3>
                     <h4><span>Front-End Developer</span> <span>2/22 - 10/24</span></h4>
-                    <p>At CQL, a digital e-commerce agency, I developed and maintained e-commerce solutions for a variety of clients. My work encompassed custom React applications, bespoke Shopify theme development, Salesforce Commerce Cloud implementations using the Storefront Reference Architecture (SFRA), and Demandware maintenance integrated with React frontends. This experience solidified my passion for React development and appreciation for the Shopify platform's capabilities. I'm driven by empowering clients with control over their brand and product experiences.</p>
+                    <p> Working at CQL, a digital e-commerce agency, gave me the chance to work on a wide range of projects for different clients. I built custom React applications, developed unique Shopify themes, implemented Salesforce Commerce Cloud (SFRA) solutions, and maintained Demandware platforms with React front-ends. This experience really cemented my passion for React and showed me the potential of Shopify. I'm driven to help clients own their brand and product experiences online.</p>
 
                     <h4><span>UI Developer</span> <span>6/16 - 2/22</span></h4>
-                    <p>At Radancy (formerly TMP), I built a large portfolio of career websites and email templates using a custom CMS, ensuring alignment with client branding and delivering exceptional digital experiences for job seekers. This role provided invaluable experience in creating accessible digital experiences, deepening my commitment to inclusive design. I transformed dozens of creative designs into engaging and accessible online platforms, a process I thoroughly enjoyed.</p>
+                    <p>At Radancy (formerly TMP), I built tons of career websites and email templates using their custom CMS. It was all about making sure everything matched the client's branding and gave job seekers a great experience. This role taught me so much about creating accessible digital experiences, which is something I'm really passionate about. I loved taking creative designs and turning them into engaging and accessible online platforms.</p>
 
                     <h4><span>Technical Consultant</span> <span>7/15 - 6/16</span></h4>
-                    <p>As a Technical Consultant at Perficient, I contributed to the development of digital prototypes for rapid user testing and iteration. Working in a highly agile environment, I built microsites to model potential enhancements to the enterprise website. Additionally, I customized WordPress themes and implemented analytics solutions.</p>
+                    <p>As a Technical Consultant at Perficient, I helped build digital prototypes for fast user testing and iteration. I worked in a super agile environment, building microsites to test out potential improvements to the main website. I also got to customize WordPress themes and implement analytics solutions.</p>
 
                     <h4><span>Wordpress Developer</span> <span>2/15 - 7/15</span></h4>
-                    <p>At IgLou, I applied my developing front-end skills to installing and customizing WordPress themes. The team provided exceptional support to both customers and colleagues, fostering a learning environment that significantly broadened my understanding of the internet.
+                    <p>At IgLou, I got to use my growing front-end skills to install and customize WordPress themes. The team there was amazing—super supportive to both customers and each other—and I learned a ton about the internet.
                     </p>
 
-                    <a className="rez-link" href="../assets/base-resume-2025.pdf" target="_blank" rel="noopener noreferrer">View resume <span className="visually-hidden">PDF</span> <FontAwesomeIcon icon={faFilePdf} /></a>
+                    <a className="rez-link" href="../assets/WebsiteResume.pdf" target="_blank" rel="noopener noreferrer">View resume <span className="visually-hidden">PDF</span> <FontAwesomeIcon icon={faFilePdf} /></a>
 
                 </div>
             </div>

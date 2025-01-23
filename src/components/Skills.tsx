@@ -198,7 +198,7 @@ const skillsArr: TSkill[] = [
     {
         name: 'WordPress Theme Development',
         category: categories.D,
-        level: 2
+        level: 4
     },
     {
         name: 'PHP',
@@ -213,7 +213,7 @@ const skillsArr: TSkill[] = [
     {
         name: 'Webflow',
         category: categories.D,
-        level: 4
+        level: 1
     },
     {
         name: 'C#',
