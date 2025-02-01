@@ -27,21 +27,46 @@ const ProjectsPage = () => {
 
                                 <div className="project-info">
                                     <h2>Portfolio Website (This Site)</h2>
-                                    <p>I built this portfolio website from the ground up using HTML, SCSS, JavaScript, React, TypeScript, and the Bootstrap Grid. It's hosted on GitHub Pages and represents my approach to clean, functional, and user-friendly design.</p>
+                                    <p>I built this portfolio website from the ground up using HTML, SCSS, JavaScript,
+                                        React, TypeScript, and the Bootstrap Grid. It's hosted on GitHub Pages and
+                                        represents my approach to clean, functional, and user-friendly design.</p>
 
-                                    <ArrowLink href="https://github.com/enielsen0001/enielsen0001.github.io" newTab={true}>View on GitHub <span className="sr-only"> opens in a new tab</span> </ArrowLink>
+                                    <ArrowLink href="https://github.com/enielsen0001/enielsen0001.github.io"
+                                               newTab={true}>View on GitHub <span className="sr-only"> opens in a new tab</span>
+                                    </ArrowLink>
+                                </div>
+
+                                <div className="project-info">
+                                    <h2>Storybook Component Library</h2>
+                                    <p>This is a sample Storybook component library I'm using to get the hang of Storybook
+                                        and Angular component development.  The components are just for learning and
+                                        demonstration, letting me practice building interactive UI elements and working
+                                        within Storybook.  They're not quite production-ready, but they're helping me get
+                                        familiar with Angular's component architecture and the Storybook workflow.</p>
+
+                                    <ArrowLink href="https://679d444cb4ff7adb6e065201-prdfpanzmd.chromatic.com/"
+                                               newTab={true}>View Storybook <span className="sr-only"> opens in a new tab</span>
+                                    </ArrowLink>
+
+                                    <ArrowLink href="https://github.com/enielsen0001/angular-storybook-playground"
+                                               newTab={true}>View on GitHub <span className="sr-only"> opens in a new tab</span>
+                                    </ArrowLink>
                                 </div>
 
                                 <div className="project-info">
                                     <h2>D3.js Data Visualizations</h2>
-                                    <p>These examples demonstrate my ability to transform complex datasets into visually compelling and informative visualizations, ranging from basic charts to intricate network graphs.</p>
+                                    <p>These examples demonstrate my ability to transform complex datasets into visually
+                                        compelling and informative visualizations, ranging from basic charts to
+                                        intricate network graphs.</p>
 
-                                    <ArrowLink href="https://codepen.io/collection/LYGOBd" newTab={true}>View on CodePen <span className="sr-only">opens in a new tab</span></ArrowLink>
+                                    <ArrowLink href="https://codepen.io/collection/LYGOBd" newTab={true}>View on
+                                        CodePen <span className="sr-only">opens in a new tab</span></ArrowLink>
                                 </div>
 
                                 <div className="project-info">
                                     <h2>Client Work Examples</h2>
-                                    <p>I'm happy to share examples of my client work! Just reach out, and I'd be glad to chat.</p>
+                                    <p>I'm happy to share examples of my client work! Just reach out, and I'd be glad to
+                                        chat.</p>
 
                                     <ArrowLink href="/contact" isRouterLink={true}>Contact me</ArrowLink></div>
                             </div>
@@ -49,7 +74,7 @@ const ProjectsPage = () => {
                     </div>
                 </div>
             </div>
-            <ContactCalloutBar />
+            <ContactCalloutBar/>
         </main>
     );
 };

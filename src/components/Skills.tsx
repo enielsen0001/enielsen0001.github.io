@@ -171,6 +171,11 @@ const skillsArr: TSkill[] = [
         level: 8
     },
     {
+        name: 'Storybook',
+        category: categories.C,
+        level: 2
+    },
+    {
         name: 'Photoshop',
         category: categories.C,
         level: 6
