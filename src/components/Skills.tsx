@@ -1,10 +1,6 @@
 import { useState } from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 
-type TVisibility = {
-    isVisible: boolean
-}
-
 type TSkill = {
     name: string,
     level: number,
@@ -52,6 +48,8 @@ const SkillList = ({ category }: { category: string }) => {
                         return (
                             <SkillBar skill={skill} />
                         );
+                    } else {
+                        return (<></>);
                     }
                 })}
             </ul>
@@ -62,7 +60,7 @@ const SkillList = ({ category }: { category: string }) => {
 
 
 const SkillBar = ({ skill }: { skill: TSkill }) => {
-    const { name, level, category } = skill;
+    const { name, level } = skill;
     const percentVal = level / 10 * 100;
 
     return (

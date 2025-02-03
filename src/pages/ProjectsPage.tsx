@@ -44,7 +44,7 @@ const ProjectsPage = () => {
                                         within Storybook.  They're not quite production-ready, but they're helping me get
                                         familiar with Angular's component architecture and the Storybook workflow.</p>
 
-                                    <ArrowLink href="https://679d444cb4ff7adb6e065201-prdfpanzmd.chromatic.com/"
+                                    <ArrowLink href="https://www.chromatic.com/library?appId=679d444cb4ff7adb6e065201"
                                                newTab={true}>View Storybook <span className="sr-only"> opens in a new tab</span>
                                     </ArrowLink>
 
